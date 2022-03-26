@@ -7,19 +7,107 @@
     <title>Trackgenix Landing page</title>
 </head>
 <body>
+
     <header>
         Esto funciona?
     </header>
 
-    <main>
-        <h1> Welcome to Trackgenix!</h1>
-        <h2> A free website for everyone at Trackgenix!</h2>
-        <p>
-            Here, you can register the hours worked in any project for all employees, 
-            generate reports and much more.
-        </p>
-    </main>
-    
+ 
+    <h1> Welcome to Trackgenix!</h1>
+    <h2> <em>A free website for everyone at Trackgenix!</em> </h2>
+    <p>
+        Here, you can register the hours worked in any project for all employees, 
+        generate reports and much more.
+    </p>
+
+    <button>LEARN MORE</button>
+
+    <h2>Why use Trackgenix?</h2>
+    <ul>
+        <li>Increase your productivity</li>
+        <li>Track your work</li>
+        <li>Leadership and team management</li>
+        <li>Company decisions</li>
+    </ul>
+
+    <h2>Contact form</h2>
+    <form action="page2.html" method="POST">
+        <fieldset>
+
+            <div>
+                <label>Business name</label>
+                <input type="text" name="business-name">
+                <label>Email</label>
+                <input type="email" name="email">
+            </div>
+
+            <div>
+                <label>Contact area</label>
+
+                <div>   
+                    <input type="radio" id="human-resources" name="contact-area" value="human-resources">   
+                    <label>Human resources</label>        
+                </div>
+
+                <div>
+                    <input type="radio" id="commercialization" name="contact-area" value="commercialization">
+                    <label>Commercialization</label>            
+                </div>
+
+                <div>
+                    <input type="radio" id="systems" name="contact-area" value="systems">
+                    <label>Systems</label>
+                </div>
+
+                <label>Phone number</label>
+                <input type="number" name="phone-number">
+
+                
+            </div>
+
+            <div>
+                <label>Message</label>
+                <textarea name="message"></textarea>
+            </div>
+
+            <input type="submit" name="submit" value="Submit">
+
+        </fieldset>
+        
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Products</th>
+                <th>Business</th>
+                <th>Support</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1. Functionalities</td>
+                <td>1. About us</td>
+                <td>1. Help</td>
+            </tr>
+            <tr>
+                <td>2. Downloads</td>
+                <td>2. Clients</td>
+                <td>2. Tutorials</td>
+            </tr>
+            <tr>
+                <td>3. Integrations</td>
+                <td>3. Resources</td>
+                <td>3. API</td>
+            </tr>
+            <tr>
+                <td>4. Extras</td>
+                <td>4. Blog</td>
+                <td>4. Contact</td>
+            </tr>
+        </tbody>
+    </table>
+
     <aside>
         Dudo que esto, a su vez, funcione
     </aside>
@@ -27,8 +115,6 @@
     <footer>
 
     </footer>
-
-
 
 </body>
 </html>
