@@ -1,12 +1,13 @@
 article{
     display: inline-block;
-    width: 48% ;
+    width: 49% ;
     font-size: 28px;
+    margin-top: 80px;
+
 }
 
 main{
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
     margin-top: 156px;
     margin-left: 376px;
     width: 1063px;
@@ -18,7 +19,7 @@ header{
     width: 1064px;
     padding-top: 0;
     padding-left: 376px;
-    background-color: #f4f4f4;
+    background-color: white;
 
     border-bottom: 2px solid;
     position: fixed;
@@ -40,10 +41,10 @@ aside{
     font-family: 'Raleway', sans-serif;
     height: 1024px;
     width: 376px;
+    background-color: white;
 
     border-right: 2px solid;
     position: fixed;
-    background-color: #f4f4f4;
     top: 0px;
     left: 0px;
 }
@@ -68,7 +69,7 @@ h4{
 #firstImage{
     height: 573px;
     width: 469px;
-
+    float: left;
     padding-left: 602px;
 }
 
@@ -78,12 +79,25 @@ h4{
     font-size: 28px;
 }
 
-.titleBox1{
-    font-weight: bold;
+#copyright{
+    font-size: 12px;
 }
 
-.imgBox1 {
+.titleBox1{
+    font-weight: bold;
 
+}
+
+.textBox1{
+
+}
+
+.imgBox1{
+    width: 208px;
+    height: 237px;
+    display: inline;
+    float: left;
+    padding-top: 10px;
 }
 
 .socialMedia{
@@ -111,14 +125,12 @@ h4{
     line-height: 82px;
     list-style-type: '✓';
     list-style-position: outside;
+    padding-left: 30px;
 }
 
 .itemBox2{
     padding-left: 29px;
-
 }
 
-.textBox1{
-    vertical-align: text-top;
-}
+
 
