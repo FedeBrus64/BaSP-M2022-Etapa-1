@@ -1,43 +1,124 @@
-body{
-    font-family: 'Roboto', sans-serif;
-}
-
 article{
     display: inline-block;
     width: 48% ;
+    font-size: 28px;
 }
 
 main{
+    font-family: 'Poppins', sans-serif;
     background-color: #f4f4f4;
     margin-top: 156px;
     margin-left: 376px;
+    width: 1063px;
 }
 
 header{
+    font-family: 'Raleway', sans-serif;
     height: 156px;
     width: 1064px;
     padding-top: 0;
     padding-left: 376px;
+    background-color: #f4f4f4;
+
+    border-bottom: 2px solid;
+    position: fixed;
+    top:0;
 }
 
 footer{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     height: 99px;
     width: 1063px;
 
     border-top: 2px solid;
-    margin-right: 376px;
+    margin-left: 376px;
+    text-align: center;
 }
 
 aside{
+    font-family: 'Raleway', sans-serif;
     height: 1024px;
     width: 376px;
 
     border-right: 2px solid;
     position: fixed;
+    background-color: #f4f4f4;
     top: 0px;
     left: 0px;
 }
 
 h1{
-    color: red
+    font-size: 64px;
+    font-weight: bold;
 }
+
+h2{
+    font-size: 48px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+h4{
+    font-size: 24px;
+}
+
+#firstImage{
+    height: 573px;
+    width: 469px;
+
+    padding-left: 602px;
+}
+
+#crest1{
+    padding-left: 24px;
+    font-style: italic;
+    font-size: 28px;
+}
+
+.titleBox1{
+    font-weight: bold;
+}
+
+.imgBox1 {
+
+}
+
+.socialMedia{
+    height: 25px;
+}
+
+.navBar{
+    display: inline-block;
+    width: 30%;
+    font-size: 18px;
+    margin-left: 4px;
+}
+
+.navBarTitle{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navBarList{
+    line-height: 42px;
+}
+
+.listBox2{
+    font-size: 28px;
+    line-height: 82px;
+    list-style-type: '✓';
+    list-style-position: outside;
+}
+
+.itemBox2{
+    padding-left: 29px;
+
+}
+
+.textBox1{
+    vertical-align: text-top;
+}
+
