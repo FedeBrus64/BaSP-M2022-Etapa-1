@@ -41,6 +41,7 @@ aside{
     height: 1024px;
     width: 376px;
     background-color: white;
+    font-size: 18px;
 
     border-right: 2px solid;
     position: fixed;
@@ -75,20 +76,30 @@ h4{
 
 #firstImage{
     height: 573px;
-    width: 469px;
+    width: 469px; 
     float: right;
-    padding-left: 602px;
+    display: inline;
+    padding-top: 20px;
 }
 
+.firstSection{
+    display: inline;
+}
+
+
 #crest1{
-    padding-left: 24px;
+    padding-left: 20px;
     font-style: italic;
     font-size: 28px;
+    padding-right: 50%;
+    padding-top: 41px;
 }
 
 #introduction{
     font-size: 24px;
-    color: #545454
+    color: #545454;
+    padding-right: 50%;
+    padding-top: 76px;
 }
 
 #learnMore{
@@ -96,6 +107,7 @@ h4{
     background-color: #AACE9B;
     width: 144px;
     height: 51px;
+    margin-top: 80px;
 }
 
 
@@ -112,7 +124,7 @@ h4{
     width: 208px;
     height: 237px;
     display: inline;
-    float: left;
+    float: left ;
     padding-top: 10px;
 }
 
@@ -184,6 +196,7 @@ textarea{
 #leftBarParagraph{
     padding-left: 44px;
     padding-right: 52px;
+    font-size: 18px;
 }
 
 #leftBarList{
@@ -223,4 +236,15 @@ input[type="text"]
     margin-left: 122px;
     margin-bottom: 44px;
     border-bottom: 4px solid #AACE9B;
+}
+
+.contactImg{
+    float: left;
+}
+
+.contactSection{
+}
+
+.contactInfo{
+    padding-left: 40px;
 }
