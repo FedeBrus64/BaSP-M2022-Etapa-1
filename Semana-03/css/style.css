@@ -21,7 +21,6 @@ header{
     padding-left: 376px;
     background-color: white;
 
-    border-bottom: 2px solid;
     position: fixed;
     top:0;
 }
@@ -52,10 +51,15 @@ aside{
 h1{
     font-size: 64px;
     font-weight: bold;
+    width: 50%;
+    padding-left: 15px;
+    padding-top:10px;
 }
 
 h2{
     font-size: 48px;
+    border-bottom: 4px solid #AACE9B;
+    margin-left: 17px;
 }
 
 h3{
@@ -64,12 +68,15 @@ h3{
 
 h4{
     font-size: 24px;
+    border-bottom: 4px solid #AACE9B;
+    margin-left: 45px;
+    margin-right: 50px;
 }
 
 #firstImage{
     height: 573px;
     width: 469px;
-    float: left;
+    float: right;
     padding-left: 602px;
 }
 
@@ -79,16 +86,25 @@ h4{
     font-size: 28px;
 }
 
+#introduction{
+    font-size: 24px;
+    color: #545454
+}
+
+#learnMore{
+    color:#373867;
+    background-color: #AACE9B;
+    width: 144px;
+    height: 51px;
+}
+
+
 #copyright{
     font-size: 12px;
 }
 
 .titleBox1{
-    font-weight: bold;
-
-}
-
-.textBox1{
+    font-weight: bolder;
 
 }
 
@@ -108,12 +124,14 @@ h4{
     display: inline-block;
     width: 30%;
     font-size: 18px;
-    margin-left: 4px;
+    margin-left: 8px;
 }
 
 .navBarTitle{
     font-size: 24px;
     font-weight: bold;
+    border-bottom: 4px solid #AACE9B;
+    width: 268px;
 }
 
 .navBarList{
@@ -132,5 +150,77 @@ h4{
     padding-left: 29px;
 }
 
+form{
+    display: inline-block;
+    width: 903px;
+    height: 516px;
+}
 
+label{
+    font-size: 14px;
+    display: block;
+    
+}
 
+.radioLabel{
+    display: inline;
+}
+
+input{
+    display: block;
+}
+
+.formText{
+    width: 317px;
+    height: 43px;
+}
+
+textarea{
+    width: 714px;
+    height: 111px;
+    resize: none;
+}
+
+#leftBarParagraph{
+    padding-left: 44px;
+    padding-right: 52px;
+}
+
+#leftBarList{
+    list-style-type: none;
+    line-height: 51px;
+    margin-right: 60px;
+    margin-left: 10px;
+    padding-bottom: 73px;
+    border-bottom: 1px solid #A4A4A4
+}
+
+.leftBarItem{
+    border-bottom: 1px solid #A4A4A4
+}
+
+.leftBarInput{
+    height: 40px;
+    width: 257px; 
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+input[type="text"]
+{
+    font-size:18px;
+}
+
+.iconMenu{
+    color: #AACE9B;
+    margin-top: 40px;
+    padding-left: 33px;
+    font-size: 44px;
+    display: inline;
+}
+
+.headerTitle{
+    margin-left: 122px;
+    margin-bottom: 44px;
+    border-bottom: 4px solid #AACE9B;
+}

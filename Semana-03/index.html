@@ -15,11 +15,13 @@
 
     <body>
         <header>
-            <div class="icon">
-                <span>&#9776;</span>
+            <div class="iconMenu">
+                <span">&#9776;</span>
             </div>
 
-            <h2>Trackgenix SA</h2>
+            <div class="headerTitle">
+                <h3 >Trackgenix SA</h3>
+            </div>
         </header>
         
         <main>
@@ -30,13 +32,13 @@
                     <em>A free website for everyone at Trackgenix!</em> 
                 </p>
 
-                <img id="firstImage" src="img/trackgenix1.png">
+                
                 <div id="introduction">
                     Here, you can register the hours worked in any project for all employees, 
                     generate reports and much more.
                 </div>
-                
-                <button>LEARN MORE</button>
+                <button id="learnMore">LEARN MORE</button>
+                <img id="firstImage" src="img/trackgenix1.png">
             </section>
             
             <section>
@@ -107,12 +109,12 @@
                     <fieldset>
                         <div>
                             <label>Business name</label>
-                            <input type="text" name="business-name">
+                            <input class="formText" type="text" name="business-name">
                         </div>
 
                         <div>
                             <label>Email</label>
-                            <input type="email" name="email">
+                            <input class="formText" type="email" name="email">
                         </div>
     
                         <div>
@@ -120,25 +122,25 @@
                             <div>   
                                 <input type="radio" id="human-resources" name="contact-area" 
                                 value="human-resources">   
-                                <label>Human resources</label>        
+                                <label class="radioLabel">Human resources</label>        
                             </div>
     
                             <div>
                                 <input type="radio" id="commercialization" name="contact-area" 
                                 value="commercialization">
-                                <label>Commercialization</label>            
+                                <label class="radioLabel">Commercialization</label>            
                             </div>
     
                             <div>
                                 <input type="radio" id="systems" name="contact-area" 
                                 value="systems">
-                                <label>Systems</label>
+                                <label class="radioLabel">Systems</label>
                             </div>
                         </div>
 
                         <div>
                             <label>Phone number</label>
-                            <input type="tel" name="phone-number">
+                            <input class="formText" type="tel" name="phone-number">
                         </div>
     
                         <div>
@@ -147,7 +149,7 @@
                         </div>
 
                         <div>
-                            <input type="submit" name="submit" value="Submit">
+                            <input type="submit" name="submit" value="SEND">
                         </div>
                     </fieldset>
                 </form>
@@ -219,18 +221,18 @@
         </main>
         
         <aside>
-            <input type="text" name="search" placeholder="&#x1F50D; search">
+            <input class="leftBarInput" type="text" name="search" placeholder="&#x1F50D; search">
             <h4>Menu</h4>
 
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sign up</a></li>
+            <ul id="leftBarList">
+                <li class="leftBarItem"><a href="#">Home</a></li>
+                <li class="leftBarItem"><a href="#">Sign up</a></li>
                 <li><a href="#">Log in</a></li>
             </ul>
 
             <h4>Get in touch</h4>
 
-            <p>
+            <p id="leftBarParagraph">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Eos nostrum nobis placeat fugit aut ullam ratione, nulla culpa natus
                 provident soluta. Commodi voluptas dolorum non dignissimos esse vel magnam libero!
