@@ -1,67 +1,81 @@
 article{
     display: inline-block;
+
     width: 49% ;
-    font-size: 28px;
     margin-top: 80px;
 
+    font-size: 28px;
 }
 
 main{
-    font-family: 'Poppins', sans-serif;
+    width:75%;
     margin-top: 156px;
-    margin-left: 376px;
-    width: 1063px;
+    margin-left: 25%;
+
+    font-family: 'Poppins', sans-serif;
+    
 }
 
 header{
-    font-family: 'Raleway', sans-serif;
-    height: 156px;
-    width: 1064px;
-    padding-top: 0;
-    padding-left: 376px;
-    background-color: white;
-    z-index: +1;
     position: fixed;
+
+    height: 18%;
+    width: 75%;
+    padding-top: 0;
+    padding-left: 25%;
     top:0;
+
+    background-color: white;
+
+    font-family: 'Raleway', sans-serif;
+    
+    z-index: +1;
 }
 
 footer{
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    height: 99px;
-    width: 1063px;
+    height: 20%;
+    width: 75%;
+    margin-left: 25%;
 
     border-top: 2px solid;
-    margin-left: 376px;
+
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 
 aside{
-    font-family: 'Raleway', sans-serif;
-    height: 1024px;
-    width: 376px;
-    background-color: white;
-    font-size: 18px;
-    z-index: +1;
-
-    border-right: 2px solid;
     position: fixed;
+
+    height: 1024px;
+    width: 25%;
     top: 0px;
     left: 0px;
+
+    background-color: white;
+    border-right: 2px solid;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+
+    z-index: +1;
 }
 
 h1{
-    font-size: 64px;
-    font-weight: bold;
     width: 50%;
     padding-left: 15px;
     padding-top:10px;
+
+    font-size: 64px;
+    font-weight: bold;
 }
 
 h2{
-    font-size: 48px;
-    border-bottom: 4px solid #AACE9B;
     margin-left: 17px;
+
+    border-bottom: 4px solid #AACE9B;
+
+    font-size: 48px;
 }
 
 h3{
@@ -69,10 +83,12 @@ h3{
 }
 
 h4{
-    font-size: 24px;
-    border-bottom: 4px solid #AACE9B;
     margin-left: 45px;
     margin-right: 50px;
+
+    border-bottom: 4px solid #AACE9B;
+
+    font-size: 24px;
 }
 
 form{
@@ -82,6 +98,7 @@ form{
 
 fieldset{
     display: inline-block;
+
     width: 903px;
     height: 516px;
     padding-left:95px;
@@ -89,14 +106,15 @@ fieldset{
 }
 
 label{
-    font-size: 14px;
     display: block;
-    
+
+    font-size: 14px;
 }
 
 textarea{
     width: 714px;
     height: 111px;
+
     resize: none;
 }
 
@@ -105,59 +123,113 @@ input[type="text"]
     font-size:18px;
 }
 
-.formButton{
-    font-size:18px;
-    background-color: #AACE9B;
-    width: 158px;
-    height: 36px;
-    margin-left: 556px;
-}
-
-.formContainer{
-    display: inline-block;
-    width: 43%;
-}
-
 #firstImage{
+    display: inline;
+
     height: 573px;
     width: 469px; 
-    float: right;
-    display: inline;
     padding-top: 20px;
+
+    float: right;
+}
+
+#crest1{
+    padding-left: 20px;
+    padding-right: 50%;
+    padding-top: 41px;
+
+    font-style: italic;
+    font-size: 28px;
+}
+
+#introduction{
+    padding-right: 50%;
+    padding-top: 76px;
+
+    font-size: 24px;
+    color: #545454;
+}
+
+#learnMore{
+    width: 144px;
+    height: 51px;
+    margin-top: 80px;
+
+    background-color: #AACE9B;
+    border-radius: 4px;
+
+    color:#373867;
+}
+
+#leftBarList{
+    margin-right: 60px;
+    margin-left: 10px;
+    padding-bottom: 73px;
+
+    border-bottom: 1px solid #A4A4A4;
+
+    list-style-type: none;
+    line-height: 51px;
+}
+
+#leftBarParagraph{
+    padding-left: 44px;
+    padding-right: 52px;
+
+    font-size: 18px;
+}
+
+#email{
+    width: 34px;
+    height: 25px;
+
+    float: left;
+}
+#adress{
+    width: 34px;
+    height: 37px;
+
+    float: left;
+}
+#telNumber{
+    width: 40px;
+    height: 47px;
+
+    float: left;
+}
+
+#copyright{
+    font-size: 12px;
+}
+
+.iconMenu{
+    display: inline;
+
+    margin-top: 40px;
+    padding-left: 33px;
+
+    color: #AACE9B;
+    font-size: 44px;
+}
+
+.headerTitle{
+    margin-left: 122px;
+    margin-bottom: 44px;
+    border-bottom: 4px solid #AACE9B;
 }
 
 .firstSection{
     display: inline;
 }
 
+.imgBox1{
+    display: inline;
 
-#crest1{
-    padding-left: 20px;
-    font-style: italic;
-    font-size: 28px;
-    padding-right: 50%;
-    padding-top: 41px;
-}
+    width: 208px;
+    height: 237px;
+    padding-top: 10px;
 
-#introduction{
-    font-size: 24px;
-    color: #545454;
-    padding-right: 50%;
-    padding-top: 76px;
-}
-
-#learnMore{
-    color:#373867;
-    background-color: #AACE9B;
-    width: 144px;
-    height: 51px;
-    margin-top: 80px;
-    border-radius: 4px;
-}
-
-
-#copyright{
-    font-size: 12px;
+    float: left;
 }
 
 .titleBox1{
@@ -165,80 +237,146 @@ input[type="text"]
 
 }
 
-.imgBox1{
-    width: 208px;
-    height: 237px;
-    display: inline;
-    float: left ;
-    padding-top: 10px;
-}
-
-.socialMedia{
-    height: 25px;
-}
-
-.navBar{
-    display: inline-block;
-    width: 30%;
-    font-size: 18px;
-    margin-left: 8px;
-}
-
-.navBarTitle{
-    font-size: 24px;
-    font-weight: bold;
-    border-bottom: 4px solid #AACE9B;
-    width: 268px;
-}
-
-.navBarList{
-    line-height: 42px;
-}
-
 .listBox2{
+    padding-left: 30px;
+
     font-size: 28px;
+
     line-height: 82px;
     list-style-type: '✓';
     list-style-position: outside;
-    padding-left: 30px;
 }
 
 .itemBox2{
     padding-left: 29px;
 }
 
+.formContainer{
+    display: inline-block;
 
-
-.radioLabel{
-    display: inline;
+    width: 43%;
 }
-
-
 
 .formText{
     width: 317px;
     height: 43px;
 }
 
+.radioLabel{
+    display: inline;
+}
 
+.formButton{
+    width: 158px;
+    height: 36px;
+    margin-left: 556px;
 
-#leftBarParagraph{
-    padding-left: 44px;
-    padding-right: 52px;
+    background-color: #AACE9B;
+
+    font-size:18px;
+}
+
+.sectionHistory{
+    width: 895px;
+    height: 604px; 
+
+    background-color: #D9E0D6;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.historyImage{
+    position:absolute;
+
+    padding-left: 448px;
+    padding-top: 167px;
+}
+
+.historyTitle{
+    width: 30%;
+    padding-left: 180px;
+    padding-top: 164px; 
+    padding-right: 10px;
+
+    border-right: 4px solid white;
+
+    color: #756464;
+    text-align: right;
+}
+
+.foundation{
+    padding-left: 146px;
+    padding-right: 449px;
+    padding-top: 29px;
+
+    font-size: 10px;
+}
+
+.containerHistory{
+    display: inline-block;
+
+    padding-top: 50px;
+}
+
+.containerDataSecurity{
+    width: 78px;
+    height: 78px;
+    margin-left: 256px;
+
+    border:2px solid white;
+    border-radius: 100%;
+
+    font-size: 6px;
+    text-align: center;
+    font-style: normal white;
+    color: white;
+}
+
+.imgHistory{
+    padding-top: 19px;
+}
+
+.containerEffectiveInTime{
+    width: 78px;
+    height: 78px;
+    margin-left: 28px;
+
+    border:2px solid white;
+    border-radius: 100%;
+
+    font-size: 6px;
+    text-align: center;
+    color: white;
+}
+
+.objective{
+    width: 208px;
+    padding-left: 46px;
+
+    border-left: 4px solid white;
+
+    font-size: 10px;
+}
+
+.navBar{
+    display: inline-block;
+
+    width: 30%;
+    margin-left: 8px;
+
     font-size: 18px;
 }
 
-#leftBarList{
-    list-style-type: none;
-    line-height: 51px;
-    margin-right: 60px;
-    margin-left: 10px;
-    padding-bottom: 73px;
-    border-bottom: 1px solid #A4A4A4
+.navBarTitle{
+    width: 268px;
+    border-bottom: 4px solid #AACE9B;
+
+    font-size: 24px;
+    font-weight: bold;
 }
 
-.leftBarItem{
-    border-bottom: 1px solid #A4A4A4
+.navBarList{
+    line-height: 42px;
 }
 
 .leftBarInput{
@@ -248,38 +386,9 @@ input[type="text"]
     margin-top: 30px;
 }
 
-
-
-.iconMenu{
-    color: #AACE9B;
-    margin-top: 40px;
-    padding-left: 33px;
-    font-size: 44px;
-    display: inline;
+.leftBarItem{
+    border-bottom: 1px solid #A4A4A4
 }
-
-.headerTitle{
-    margin-left: 122px;
-    margin-bottom: 44px;
-    border-bottom: 4px solid #AACE9B;
-}
-
-#email{
-    width: 34px;
-    height: 25px;
-    float: left;
-}
-#adress{
-    width: 34px;
-    height: 37px;
-    float: left;
-}
-#telNumber{
-    width: 40px;
-    height: 47px;
-    float: left;
-}
-
 
 .containerAside{
     padding-top: 30px;
@@ -287,8 +396,9 @@ input[type="text"]
 
 .containerContact{
     margin-left: 50px;
-    padding-bottom: 20px;
     margin-top: 10px;
+    padding-bottom: 20px;
+
     border-bottom:2px solid #AACE9B;
 
 }
@@ -301,73 +411,6 @@ input[type="text"]
     padding-left: 12px;
 }
 
-.sectionHistory{
-    width: 895px;
-    height: 604px; 
-    background-color: #D9E0D6;
-    border-radius: 50%;
-    border: 2px solid white;
+.socialMedia{
+    height: 25px;
 }
-
-.historyTitle{
-    color: #756464;
-    padding-left: 180px;
-    padding-top: 164px; 
-    padding-right: 10px;
-    width: 30%;
-    text-align: right;
-    border-right: 4px solid white;
-}
-
-.foundation{
-    font-size: 10px;
-    padding-left: 146px;
-    padding-right: 449px;
-    padding-top: 29px;
-}
-
-.objective{
-    font-size: 10px;
-    width: 208px;
-    padding-left: 46px;
-    border-left: 4px solid white;
-}
-
-.containerDataSecurity{
-    border:2px solid white;
-    border-radius: 100%;
-    width: 78px;
-    height: 78px;
-    font-size: 6px;
-    text-align: center;
-    margin-left: 256px;
-    font-style: normal white;
-    color: white;
-}
-
-.containerEffectiveInTime{
-    border:2px solid white;
-    border-radius: 100%;
-    width: 78px;
-    height: 78px;
-    font-size: 6px;
-    text-align: center;
-    margin-left: 28px;
-    color: white;
-}
-
-.historyImage{
-    position:absolute;
-    padding-left: 448px;
-    padding-top: 167px;
-}
-
-.imgHistory{
-    padding-top: 19px;
-}
-
-.containerHistory{
-    display: inline-block;
-    padding-top: 50px;
-}
-
