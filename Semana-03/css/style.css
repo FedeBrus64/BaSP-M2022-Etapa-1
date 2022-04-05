@@ -20,7 +20,7 @@ header{
     padding-top: 0;
     padding-left: 376px;
     background-color: white;
-
+    z-index: +1;
     position: fixed;
     top:0;
 }
@@ -42,6 +42,7 @@ aside{
     width: 376px;
     background-color: white;
     font-size: 18px;
+    z-index: +1;
 
     border-right: 2px solid;
     position: fixed;
@@ -72,6 +73,49 @@ h4{
     border-bottom: 4px solid #AACE9B;
     margin-left: 45px;
     margin-right: 50px;
+}
+
+form{
+    display: inline-block;
+}
+
+
+fieldset{
+    display: inline-block;
+    width: 903px;
+    height: 516px;
+    padding-left:95px;
+    padding-top: 72px;
+}
+
+label{
+    font-size: 14px;
+    display: block;
+    
+}
+
+textarea{
+    width: 714px;
+    height: 111px;
+    resize: none;
+}
+
+input[type="text"]
+{
+    font-size:18px;
+}
+
+.formButton{
+    font-size:18px;
+    background-color: #AACE9B;
+    width: 158px;
+    height: 36px;
+    margin-left: 556px;
+}
+
+.formContainer{
+    display: inline-block;
+    width: 43%;
 }
 
 #firstImage{
@@ -108,6 +152,7 @@ h4{
     width: 144px;
     height: 51px;
     margin-top: 80px;
+    border-radius: 4px;
 }
 
 
@@ -162,36 +207,20 @@ h4{
     padding-left: 29px;
 }
 
-form{
-    display: inline-block;
-    width: 903px;
-    height: 516px;
-}
 
-label{
-    font-size: 14px;
-    display: block;
-    
-}
 
 .radioLabel{
     display: inline;
 }
 
-input{
-    display: block;
-}
+
 
 .formText{
     width: 317px;
     height: 43px;
 }
 
-textarea{
-    width: 714px;
-    height: 111px;
-    resize: none;
-}
+
 
 #leftBarParagraph{
     padding-left: 44px;
@@ -219,10 +248,7 @@ textarea{
     margin-top: 30px;
 }
 
-input[type="text"]
-{
-    font-size:18px;
-}
+
 
 .iconMenu{
     color: #AACE9B;
@@ -238,13 +264,110 @@ input[type="text"]
     border-bottom: 4px solid #AACE9B;
 }
 
-.contactImg{
+#email{
+    width: 34px;
+    height: 25px;
+    float: left;
+}
+#adress{
+    width: 34px;
+    height: 37px;
+    float: left;
+}
+#telNumber{
+    width: 40px;
+    height: 47px;
     float: left;
 }
 
-.contactSection{
+
+.containerAside{
+    padding-top: 30px;
+}
+
+.containerContact{
+    margin-left: 50px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    border-bottom:2px solid #AACE9B;
+
+}
+
+.contactImg{
+    padding-right: 10px;
 }
 
 .contactInfo{
-    padding-left: 40px;
+    padding-left: 12px;
 }
+
+.sectionHistory{
+    width: 895px;
+    height: 604px; 
+    background-color: #D9E0D6;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.historyTitle{
+    color: #756464;
+    padding-left: 180px;
+    padding-top: 164px; 
+    padding-right: 10px;
+    width: 30%;
+    text-align: right;
+    border-right: 4px solid white;
+}
+
+.foundation{
+    font-size: 10px;
+    padding-left: 146px;
+    padding-right: 449px;
+    padding-top: 29px;
+}
+
+.objective{
+    font-size: 10px;
+    width: 208px;
+    padding-left: 46px;
+    border-left: 4px solid white;
+}
+
+.containerDataSecurity{
+    border:2px solid white;
+    border-radius: 100%;
+    width: 78px;
+    height: 78px;
+    font-size: 6px;
+    text-align: center;
+    margin-left: 256px;
+    font-style: normal white;
+    color: white;
+}
+
+.containerEffectiveInTime{
+    border:2px solid white;
+    border-radius: 100%;
+    width: 78px;
+    height: 78px;
+    font-size: 6px;
+    text-align: center;
+    margin-left: 28px;
+    color: white;
+}
+
+.historyImage{
+    position:absolute;
+    padding-left: 448px;
+    padding-top: 167px;
+}
+
+.imgHistory{
+    padding-top: 19px;
+}
+
+.containerHistory{
+    display: inline-block;
+    padding-top: 50px;
+}
+

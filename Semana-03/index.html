@@ -106,19 +106,19 @@
             
             <section>
                 <h2>Contact form</h2>
-                <form action="#" method="POST">
+                <form>
                     <fieldset>
-                        <div>
+                        <div class="formContainer">
                             <label>Business name</label>
                             <input class="formText" type="text" name="business-name">
                         </div>
 
-                        <div>
+                        <div class="formContainer">
                             <label>Email</label>
                             <input class="formText" type="email" name="email">
                         </div>
     
-                        <div>
+                        <div class="formContainer">
                             <label>Contact area</label>
                             <div>   
                                 <input type="radio" id="human-resources" name="contact-area" 
@@ -139,46 +139,50 @@
                             </div>
                         </div>
 
-                        <div>
+                        <div class="formContainer">
                             <label>Phone number</label>
                             <input class="formText" type="tel" name="phone-number">
                         </div>
     
-                        <div>
+                        <div class="formContainer">
                             <label>Message</label>
                             <textarea name="message"></textarea>
                         </div>
 
                         <div>
-                            <input type="submit" name="submit" value="SEND">
+                            <input class="formButton" type="submit" name="submit" value="SEND">
                         </div>
                     </fieldset>
                 </form>
             </section>
     
-            <section>   
-                <div>
-                    <h3>Trackgenix history</h3>
-                    <p>
-                        Trackgenix was founded on April 1, 2014, by college dropouts
-                        James Bond and Steve Pitt, who brought to the new company a vision of
-                        changing the way people viewed computers.
-                    </p>
+            <section class="sectionHistory">   
+                <img class="historyImage" src="img/historyImage.png">
+                <h3 class="historyTitle">Trackgenix History</h3>
+                
+                <p class="foundation">
+                    Trackgenix was founded on April 1, 2014, by college dropouts
+                    James Bond and Steve Pitt, who brought to the new company a vision of
+                    changing the way people viewed computers.
+                </p>
+
+                <div class="containerHistory">
+                    <div class="containerDataSecurity">
+                        <img class="imgHistory" src="img/data-security.png"> <div>Data security</div>
+                    </div>
                 </div>
                 
-                <div>
-                    <p>
+                <div class="containerHistory">
+                    <div class="containerEffectiveInTime">
+                        <img class="imgHistory" src="img/effective-in-time.png"> <div>Effective in time</div>
+                    </div>
+                </div>
+
+                <div class="containerHistory">
+                    <div class="objective">
                         Objective: Providing the right solutions and getting products into customers' hands
                         with the support of store team members.
-                    </p>
-                </div>
-    
-                <div>
-                    <img src="img/data-security.png"> Data security
-                </div>
-    
-                <div>
-                    <img src="img/effective-in-time.png"> Effective in time
+                    </div>
                 </div>
             </section>
             
@@ -239,22 +243,26 @@
                 provident soluta. Commodi voluptas dolorum non dignissimos esse vel magnam libero!
             </p>
 
-            <div class="contactSection">
-                <img src="img/emailIcon.png">
-                <a class="contactInfo" href="#">information@trackgenix.tld</a>
-            </div>
+            <div class="containerAside">
+                <div class="containerContact">
+                    <img class="contactImg" id="email" src="img/emailIcon.png">
+                    <a class="contactInfo" href="#">information@trackgenix.tld</a> 
+                </div>
 
-            <div class="contactSection">
-                <img src="img/adressIcon.png">
-                <a class="contactInfo" href="#">1234 Somewhere road #8254 Nashville. TN 00000-000</a>
-            </div>
-            
+                <div class="containerContact">
+                    <img class="contactImg" id="adress" src="img/adressIcon.png">
+                    <a class="contactInfo" href="#">
+                        1234 Somewhere road #8254 Nashville. TN 00000-000
+                    </a>
+                </div>
 
-            <div class="contactSection">
-                <img class="contactImg" src="img/telephoneIcon.png">
-                <a class="contactInfo" href="#">(000) 000-0000 </a>
+                <div class="containerContact">
+                    <img class="contactImg" id="telNumber" src="img/telephoneIcon.png">
+                    <a class="contactInfo" href="#">
+                        (000) 000-0000
+                    </a>
+                </div>
             </div>
-            
         </aside>
 
         <footer>
