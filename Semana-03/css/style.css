@@ -69,27 +69,6 @@ h1{
     font-weight: bold;
 }
 
-h2{
-    margin-left: 17px;
-
-    border-bottom: 4px solid #AACE9B;
-
-    font-size: 48px;
-}
-
-h3{
-    font-size: 30px;
-}
-
-h4{
-    margin-left: 45px;
-    margin-right: 50px;
-
-    border-bottom: 4px solid #AACE9B;
-
-    font-size: 24px;
-}
-
 form{
     display: inline-block;
 }
@@ -213,12 +192,27 @@ input[type="text"]
 
 .header-title{
     margin-left: 122px;
-    margin-bottom: 44px;
+    padding-bottom: 44px;
+
     border-bottom: 4px solid #AACE9B;
+
+    font-size: 30px;
+    font-weight: bolder;
+
 }
 
 .first-section{
     display: inline;
+}
+
+.title-section{
+    margin-left: 17px;
+    border-bottom: 4px solid #AACE9B;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    font-size: 48px;
+    font-weight: bolder;
 }
 
 .img-box-1{
@@ -299,6 +293,7 @@ input[type="text"]
 
     border-right: 4px solid white;
 
+    font-size: 30px;
     color: #756464;
     text-align: right;
 }
@@ -378,11 +373,32 @@ input[type="text"]
     line-height: 42px;
 }
 
+.icon-search{
+    position: absolute;
+    padding-left: 48px;
+    padding-top: 40px;
+}
+
 .left-bar-input{
     height: 40px;
     width: 257px; 
     margin-left: 40px;
     margin-top: 30px;
+}
+
+.left-bar-input[type = text]{
+    padding-left: 36px;
+}
+
+.left-bar-title{
+    margin-left: 45px;
+    margin-right: 50px;
+    margin-top: 46px;
+
+    border-bottom: 4px solid #AACE9B;
+
+    font-size: 24px;
+    font-weight: bolder;
 }
 
 .left-bar-item{
