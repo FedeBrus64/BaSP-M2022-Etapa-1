@@ -13,7 +13,6 @@ main{
     margin-left: 25%;
 
     font-family: 'Poppins', sans-serif;
-    
 }
 
 header{
@@ -28,7 +27,7 @@ header{
     background-color: white;
 
     font-family: 'Raleway', sans-serif;
-    
+
     z-index: +1;
 }
 
@@ -123,7 +122,7 @@ input[type="text"]
     font-size:18px;
 }
 
-#firstImage{
+#first-image{
     display: inline;
 
     height: 573px;
@@ -133,7 +132,7 @@ input[type="text"]
     float: right;
 }
 
-#crest1{
+#crest{
     padding-left: 20px;
     padding-right: 50%;
     padding-top: 41px;
@@ -150,7 +149,7 @@ input[type="text"]
     color: #545454;
 }
 
-#learnMore{
+#learn-more{
     width: 144px;
     height: 51px;
     margin-top: 80px;
@@ -161,7 +160,7 @@ input[type="text"]
     color:#373867;
 }
 
-#leftBarList{
+#left-bar-list{
     margin-right: 60px;
     margin-left: 10px;
     padding-bottom: 73px;
@@ -172,26 +171,26 @@ input[type="text"]
     line-height: 51px;
 }
 
-#leftBarParagraph{
+#left-bar-paragraph{
     padding-left: 44px;
     padding-right: 52px;
 
     font-size: 18px;
 }
 
-#email{
+#img-email{
     width: 34px;
     height: 25px;
 
     float: left;
 }
-#adress{
+#img-adress{
     width: 34px;
     height: 37px;
 
     float: left;
 }
-#telNumber{
+#img-tel-number{
     width: 40px;
     height: 47px;
 
@@ -202,7 +201,7 @@ input[type="text"]
     font-size: 12px;
 }
 
-.iconMenu{
+.icon-menu{
     display: inline;
 
     margin-top: 40px;
@@ -212,17 +211,17 @@ input[type="text"]
     font-size: 44px;
 }
 
-.headerTitle{
+.header-title{
     margin-left: 122px;
     margin-bottom: 44px;
     border-bottom: 4px solid #AACE9B;
 }
 
-.firstSection{
+.first-section{
     display: inline;
 }
 
-.imgBox1{
+.img-box-1{
     display: inline;
 
     width: 208px;
@@ -232,12 +231,12 @@ input[type="text"]
     float: left;
 }
 
-.titleBox1{
+.title-box-1{
     font-weight: bolder;
 
 }
 
-.listBox2{
+.list-box-2{
     padding-left: 30px;
 
     font-size: 28px;
@@ -247,26 +246,26 @@ input[type="text"]
     list-style-position: outside;
 }
 
-.itemBox2{
+.item-box-2{
     padding-left: 29px;
 }
 
-.formContainer{
+.form-container{
     display: inline-block;
 
     width: 43%;
 }
 
-.formText{
+.form-text{
     width: 317px;
     height: 43px;
 }
 
-.radioLabel{
+.radio-label{
     display: inline;
 }
 
-.formButton{
+.form-button{
     width: 158px;
     height: 36px;
     margin-left: 556px;
@@ -276,7 +275,7 @@ input[type="text"]
     font-size:18px;
 }
 
-.sectionHistory{
+.section-history{
     width: 895px;
     height: 604px; 
 
@@ -285,14 +284,14 @@ input[type="text"]
     border: 2px solid white;
 }
 
-.historyImage{
+.history-image{
     position:absolute;
 
     padding-left: 448px;
     padding-top: 167px;
 }
 
-.historyTitle{
+.history-title{
     width: 30%;
     padding-left: 180px;
     padding-top: 164px; 
@@ -312,13 +311,13 @@ input[type="text"]
     font-size: 10px;
 }
 
-.containerHistory{
+.container-history{
     display: inline-block;
 
     padding-top: 50px;
 }
 
-.containerDataSecurity{
+.container-data-security{
     width: 78px;
     height: 78px;
     margin-left: 256px;
@@ -332,11 +331,11 @@ input[type="text"]
     color: white;
 }
 
-.imgHistory{
+.img-history{
     padding-top: 19px;
 }
 
-.containerEffectiveInTime{
+.container-effective-in-time{
     width: 78px;
     height: 78px;
     margin-left: 28px;
@@ -358,7 +357,7 @@ input[type="text"]
     font-size: 10px;
 }
 
-.navBar{
+.nav-bar{
     display: inline-block;
 
     width: 30%;
@@ -367,7 +366,7 @@ input[type="text"]
     font-size: 18px;
 }
 
-.navBarTitle{
+.nav-bar-title{
     width: 268px;
     border-bottom: 4px solid #AACE9B;
 
@@ -375,26 +374,26 @@ input[type="text"]
     font-weight: bold;
 }
 
-.navBarList{
+.nav-bar-list{
     line-height: 42px;
 }
 
-.leftBarInput{
+.left-bar-input{
     height: 40px;
     width: 257px; 
     margin-left: 40px;
     margin-top: 30px;
 }
 
-.leftBarItem{
+.left-bar-item{
     border-bottom: 1px solid #A4A4A4
 }
 
-.containerAside{
+.container-aside{
     padding-top: 30px;
 }
 
-.containerContact{
+.container-contact{
     margin-left: 50px;
     margin-top: 10px;
     padding-bottom: 20px;
@@ -403,14 +402,14 @@ input[type="text"]
 
 }
 
-.contactImg{
+.contact-img{
     padding-right: 10px;
 }
 
-.contactInfo{
+.contact-info{
     padding-left: 12px;
 }
 
-.socialMedia{
+.social-media{
     height: 25px;
 }

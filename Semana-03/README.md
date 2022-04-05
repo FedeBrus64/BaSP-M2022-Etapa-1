@@ -10,6 +10,10 @@ This software is currently running on this repository: https://github.com/FedeBr
 
 This software does not need to be installed, since it is running online. The url for this software is: http://trackgenix.com
 
+## Styling
+
+This software's styles have been constructed to resemble the prototype included in this URL: https://www.figma.com/file/xPbLBgNtltoIh6EoYcjf5Z/BaSP---UI-Kit---Diego?node-id=41%3A4
+
 ## Contributing
 
 Pull requests are welcome. You are free to help us improve this website.
