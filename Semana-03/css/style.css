@@ -183,6 +183,11 @@ input[type="text"]
 
     float: left;
 }
+
+#container-telephone{
+    border:none;
+}
+
 #img-tel-number{
     width: 40px;
     height: 47px;
