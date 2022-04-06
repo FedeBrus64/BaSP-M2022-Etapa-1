@@ -1,3 +1,7 @@
+body{
+    line-height: normal;
+}
+
 article{
     display: inline-block;
 
@@ -32,7 +36,7 @@ header{
 }
 
 footer{
-    height: 20%;
+    height: 14%;
     width: 75%;
     margin-left: 25%;
 
@@ -79,8 +83,10 @@ fieldset{
 
     width: 903px;
     height: 516px;
-    padding-left:95px;
-    padding-top: 72px;
+    padding-left:138px;
+    padding-top: 100px;
+
+    
 }
 
 label{
@@ -123,6 +129,9 @@ input[type="text"]
 #introduction{
     padding-right: 50%;
     padding-top: 76px;
+    margin-left: 11px;
+    width: 557px;
+    height: 114px;
 
     font-size: 24px;
     color: #545454;
@@ -132,6 +141,7 @@ input[type="text"]
     width: 144px;
     height: 51px;
     margin-top: 80px;
+    margin-left: 10px;
 
     background-color: #AACE9B;
     border-radius: 4px;
@@ -140,8 +150,9 @@ input[type="text"]
 }
 
 #left-bar-list{
+    padding-top: 20px;
     margin-right: 60px;
-    margin-left: 10px;
+    margin-left: 46px;
     padding-bottom: 73px;
 
     border-bottom: 1px solid #A4A4A4;
@@ -153,6 +164,9 @@ input[type="text"]
 #left-bar-paragraph{
     padding-left: 44px;
     padding-right: 52px;
+    padding-top: 20px;
+    height: 147px;
+    width: 280px;
 
     font-size: 18px;
 }
@@ -282,7 +296,7 @@ input[type="text"]
     position:absolute;
 
     padding-left: 448px;
-    padding-top: 167px;
+    padding-top: 150px;
 }
 
 .history-title{
@@ -357,6 +371,7 @@ input[type="text"]
 
     width: 30%;
     margin-left: 8px;
+    margin-top: 40px;
 
     font-size: 18px;
 }
@@ -370,7 +385,16 @@ input[type="text"]
 }
 
 .nav-bar-list{
-    line-height: 42px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+    line-height: 60px;
+
+    list-style-type:decimal;
+}
+
+.nav-bar-list-item{
+    margin-left: 50px;
 }
 
 .icon-search{
@@ -381,7 +405,7 @@ input[type="text"]
 
 .left-bar-input{
     height: 40px;
-    width: 257px; 
+    width: 252px; 
     margin-left: 40px;
     margin-top: 30px;
 }
@@ -393,7 +417,8 @@ input[type="text"]
 .left-bar-title{
     margin-left: 45px;
     margin-right: 50px;
-    margin-top: 46px;
+    margin-top: 40px;
+    padding-bottom: 12px;
 
     border-bottom: 4px solid #AACE9B;
 
@@ -426,6 +451,13 @@ input[type="text"]
     padding-left: 12px;
 }
 
+.container-footer{
+    padding-top: 7px;
+
+    line-height: 34px;
+}
+
 .social-media{
-    height: 25px;
+    height: 30px;
+    padding-top: 2px;
 }
