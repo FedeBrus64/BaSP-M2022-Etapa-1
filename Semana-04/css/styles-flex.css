@@ -1,0 +1,19 @@
+body{
+    width: 480px;
+}
+
+aside{
+    display: none;
+}
+
+article{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (icon-menu:target) {
+    aside{
+        display:flex;
+    }
+    
+}

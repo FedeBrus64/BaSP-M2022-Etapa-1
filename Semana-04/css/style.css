@@ -49,18 +49,14 @@ footer{
 
 aside{
     position: fixed;
-
     height: 1024px;
     width: 25%;
     top: 0px;
     left: 0px;
-
     background-color: white;
     border-right: 2px solid;
-
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
-
     z-index: +1;
 }
 
@@ -68,7 +64,6 @@ h1{
     width: 50%;
     padding-left: 15px;
     padding-top:10px;
-
     font-size: 64px;
     font-weight: bold;
 }
@@ -77,28 +72,22 @@ form{
     display: inline-block;
 }
 
-
 fieldset{
     display: inline-block;
-
     width: 903px;
     height: 516px;
     padding-left:138px;
     padding-top: 100px;
-
-    
 }
 
 label{
     display: block;
-
     font-size: 14px;
 }
 
 textarea{
     width: 714px;
     height: 111px;
-
     resize: none;
 }
 
@@ -109,11 +98,9 @@ input[type="text"]
 
 #first-image{
     display: inline;
-
     height: 573px;
     width: 469px; 
     padding-top: 20px;
-
     float: right;
 }
 
@@ -121,7 +108,6 @@ input[type="text"]
     padding-left: 20px;
     padding-right: 50%;
     padding-top: 41px;
-
     font-style: italic;
     font-size: 28px;
 }
@@ -132,7 +118,6 @@ input[type="text"]
     margin-left: 11px;
     width: 557px;
     height: 114px;
-
     font-size: 24px;
     color: #545454;
 }
@@ -142,10 +127,8 @@ input[type="text"]
     height: 51px;
     margin-top: 80px;
     margin-left: 10px;
-
     background-color: #AACE9B;
     border-radius: 4px;
-
     color:#373867;
 }
 
@@ -154,9 +137,7 @@ input[type="text"]
     margin-right: 60px;
     margin-left: 46px;
     padding-bottom: 73px;
-
     border-bottom: 1px solid #A4A4A4;
-
     list-style-type: none;
     line-height: 51px;
 }
@@ -167,20 +148,17 @@ input[type="text"]
     padding-top: 20px;
     height: 147px;
     width: 280px;
-
     font-size: 18px;
 }
 
 #img-email{
     width: 34px;
     height: 25px;
-
     float: left;
 }
 #img-adress{
     width: 34px;
     height: 37px;
-
     float: left;
 }
 
@@ -191,7 +169,6 @@ input[type="text"]
 #img-tel-number{
     width: 40px;
     height: 47px;
-
     float: left;
 }
 
@@ -201,10 +178,8 @@ input[type="text"]
 
 .icon-menu{
     display: inline;
-
     margin-top: 40px;
     padding-left: 33px;
-
     color: #AACE9B;
     font-size: 44px;
 }
@@ -212,9 +187,7 @@ input[type="text"]
 .header-title{
     margin-left: 122px;
     padding-bottom: 44px;
-
     border-bottom: 4px solid #AACE9B;
-
     font-size: 30px;
     font-weight: bolder;
 
@@ -229,31 +202,25 @@ input[type="text"]
     border-bottom: 4px solid #AACE9B;
     margin-top: 20px;
     margin-bottom: 20px;
-
     font-size: 48px;
     font-weight: bolder;
 }
 
 .img-box-1{
     display: inline;
-
     width: 208px;
     height: 237px;
     padding-top: 10px;
-
     float: left;
 }
 
 .title-box-1{
     font-weight: bolder;
-
 }
 
 .list-box-2{
     padding-left: 30px;
-
     font-size: 28px;
-
     line-height: 82px;
     list-style-type: '✓';
     list-style-position: outside;
@@ -265,7 +232,6 @@ input[type="text"]
 
 .form-container{
     display: inline-block;
-
     width: 43%;
 }
 
@@ -282,16 +248,13 @@ input[type="text"]
     width: 158px;
     height: 36px;
     margin-left: 556px;
-
     background-color: #AACE9B;
-
     font-size:18px;
 }
 
 .section-history{
     width: 895px;
     height: 604px; 
-
     background-color: #D9E0D6;
     border-radius: 50%;
     border: 2px solid white;
@@ -299,7 +262,6 @@ input[type="text"]
 
 .history-image{
     position:absolute;
-
     padding-left: 448px;
     padding-top: 150px;
 }
@@ -309,9 +271,7 @@ input[type="text"]
     padding-left: 180px;
     padding-top: 164px; 
     padding-right: 10px;
-
     border-right: 4px solid white;
-
     font-size: 30px;
     color: #756464;
     text-align: right;
@@ -321,13 +281,11 @@ input[type="text"]
     padding-left: 146px;
     padding-right: 449px;
     padding-top: 29px;
-
     font-size: 10px;
 }
 
 .container-history{
     display: inline-block;
-
     padding-top: 50px;
 }
 
@@ -335,10 +293,8 @@ input[type="text"]
     width: 78px;
     height: 78px;
     margin-left: 256px;
-
     border:2px solid white;
     border-radius: 100%;
-
     font-size: 6px;
     text-align: center;
     font-style: normal white;
@@ -353,10 +309,8 @@ input[type="text"]
     width: 78px;
     height: 78px;
     margin-left: 28px;
-
     border:2px solid white;
     border-radius: 100%;
-
     font-size: 6px;
     text-align: center;
     color: white;
@@ -365,26 +319,21 @@ input[type="text"]
 .objective{
     width: 208px;
     padding-left: 46px;
-
     border-left: 4px solid white;
-
     font-size: 10px;
 }
 
 .nav-bar{
     display: inline-block;
-
     width: 30%;
     margin-left: 8px;
     margin-top: 40px;
-
     font-size: 18px;
 }
 
 .nav-bar-title{
     width: 268px;
     border-bottom: 4px solid #AACE9B;
-
     font-size: 24px;
     font-weight: bold;
 }
@@ -392,9 +341,7 @@ input[type="text"]
 .nav-bar-list{
     padding-top: 20px;
     padding-bottom: 30px;
-
     line-height: 60px;
-
     list-style-type:decimal;
 }
 
@@ -424,9 +371,7 @@ input[type="text"]
     margin-right: 50px;
     margin-top: 40px;
     padding-bottom: 12px;
-
     border-bottom: 4px solid #AACE9B;
-
     font-size: 24px;
     font-weight: bolder;
 }
@@ -443,9 +388,7 @@ input[type="text"]
     margin-left: 50px;
     margin-top: 10px;
     padding-bottom: 20px;
-
     border-bottom:2px solid #AACE9B;
-
 }
 
 .contact-img{
@@ -458,7 +401,6 @@ input[type="text"]
 
 .container-footer{
     padding-top: 7px;
-
     line-height: 34px;
 }
 
