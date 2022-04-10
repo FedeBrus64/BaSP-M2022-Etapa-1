@@ -4,10 +4,8 @@ body{
 
 article{
     display: inline-block;
-
     width: 49% ;
     margin-top: 80px;
-
     font-size: 28px;
 }
 
@@ -15,23 +13,18 @@ main{
     width:75%;
     margin-top: 156px;
     margin-left: 25%;
-
     font-family: 'Poppins', sans-serif;
 }
 
 header{
     position: fixed;
-
     height: 18%;
     width: 75%;
     padding-top: 0;
     padding-left: 25%;
     top:0;
-
     background-color: white;
-
     font-family: 'Raleway', sans-serif;
-
     z-index: +1;
 }
 
@@ -39,9 +32,7 @@ footer{
     height: 14%;
     width: 75%;
     margin-left: 25%;
-
     border-top: 2px solid;
-
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -190,7 +181,6 @@ input[type="text"]
     border-bottom: 4px solid #AACE9B;
     font-size: 30px;
     font-weight: bolder;
-
 }
 
 .first-section{

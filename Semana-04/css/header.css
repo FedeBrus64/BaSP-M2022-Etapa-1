@@ -1,0 +1,22 @@
+header{
+    position:fixed;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    background-color: white;
+    height: 18%;
+}
+
+.icon-menu{
+    color: #AACE9B;
+    font-size: 59px;
+}
+
+.header-title{
+    padding-bottom: 20px;
+    border-bottom: 4px solid #AACE9B;
+    font-size: 80px;
+    font-weight: bolder;
+    align-self: center;
+}

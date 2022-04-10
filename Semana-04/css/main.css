@@ -1,0 +1,150 @@
+main{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 26%;
+}
+
+article{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E5E5;
+    border: 1px solid black;
+}
+
+textarea{
+    resize: none;
+}
+
+#first-image{
+    display: inline;
+    width: 145px; 
+    padding-top: 20px;
+    float: right;
+}
+
+#crest{
+    padding-left: 20px;
+    padding-right: 50%;
+    padding-top: 41px;
+    font-style: italic;
+    font-size: 28px;
+}
+
+#introduction{
+    padding-right: 50%;
+    padding-top: 76px;
+    margin-left: 11px;
+    width: 557px;
+    height: 114px;
+    font-size: 24px;
+    color: #545454;
+}
+
+#learn-more{
+    width: 144px;
+    height: 51px;
+    margin-top: 80px;
+    margin-left: 10px;
+    background-color: #AACE9B;
+    border-radius: 4px;
+    color:#373867;
+}
+
+.title-section, .history-title{
+    margin-left: 17px;
+    border-bottom: 4px solid #AACE9B;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #373867;
+}
+
+.container-section-2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.img-box-1{
+    align-self: center;
+    width: 180px;
+}
+
+.title-box-1{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.list-box-2{
+    padding-left: 30px;
+    font-size: 28px;
+    line-height: 82px;
+    list-style-type: '✓';
+    list-style-position: outside;
+}
+
+.item-box-2{
+    padding-left: 29px;
+    font-size: 20px;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.form-button{
+    width: 94px;
+    height: 41px;
+    align-self: center;
+    background-color: #AACE9B;
+    font-size:18px;
+}
+
+.history-image{
+    display: none;
+}
+
+.container-data-security{
+    display: none;
+}
+
+.img-history{
+    display: none;
+}
+
+.container-effective-in-time{
+    display: none;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-bar-title{
+    width: 268px;
+    border-bottom: 4px solid #AACE9B;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-bar-list{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    line-height: 60px;
+    list-style-type:decimal;
+}
+
+.nav-bar-list-item{
+    margin-left: 50px;
+}

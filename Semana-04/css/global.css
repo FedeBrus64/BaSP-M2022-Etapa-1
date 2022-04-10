@@ -1,0 +1,14 @@
+body{
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    color: #373867;
+}
+
+
+h1{
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+}
