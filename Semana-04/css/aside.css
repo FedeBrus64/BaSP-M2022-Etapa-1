@@ -1,3 +1,107 @@
 aside{
     display:none;
 }
+
+@media screen and (min-width: 900px) {
+    aside{
+        display:flex;
+        position: fixed;
+        flex-direction: column;
+        width: 25%;
+        background-color: white;
+        border-right: 2px solid;
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+    }
+
+    #left-bar-list{
+        padding-top: 20px;
+        margin-right: 60px;
+        margin-left: 46px;
+        padding-bottom: 73px;
+        border-bottom: 1px solid #A4A4A4;
+        list-style-type: none;
+        line-height: 51px;
+    }
+    
+    #left-bar-paragraph{
+        padding-left: 44px;
+        padding-right: 52px;
+        padding-top: 20px;
+        height: 147px;
+        width: 280px;
+        font-size: 18px;
+    }
+    
+    #img-email{
+        width: 34px;
+        height: 25px;
+        float: left;
+    }
+    #img-adress{
+        width: 34px;
+        height: 37px;
+        float: left;
+    }
+    
+    #container-telephone{
+        border:none;
+    }
+    
+    #img-tel-number{
+        width: 40px;
+        height: 47px;
+        float: left;
+    }
+
+    .icon-search{
+        position: absolute;
+        padding-left: 48px;
+        padding-top: 40px;
+        width: 25px;
+    }
+
+    .left-bar-input{
+        height: 40px;
+        width: 252px; 
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+    
+    .left-bar-input[type = text]{
+        padding-left: 36px;
+    }
+    
+    .left-bar-title{
+        margin-left: 45px;
+        margin-right: 50px;
+        margin-top: 40px;
+        padding-bottom: 12px;
+        border-bottom: 4px solid #AACE9B;
+        font-size: 24px;
+        font-weight: bolder;
+    }
+    
+    .left-bar-item{
+        border-bottom: 1px solid #A4A4A4
+    }
+    
+    .container-aside{
+        padding-top: 30px;
+    }
+    
+    .container-contact{
+        margin-left: 50px;
+        margin-top: 10px;
+        padding-bottom: 20px;
+        border-bottom:2px solid #AACE9B;
+    }
+    
+    .contact-img{
+        padding-right: 10px;
+    }
+    
+    .contact-info{
+        padding-left: 12px;
+    }
+}
