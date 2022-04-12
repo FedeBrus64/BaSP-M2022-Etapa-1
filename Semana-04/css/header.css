@@ -2,10 +2,10 @@ header{
     position:fixed;
     display: flex;
     flex-direction: row;
-    font-family: 'Raleway', sans-serif;
     width: 100%;
-    background-color: white;
     height: 18%;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
 }
 
 .icon-menu{
@@ -14,16 +14,16 @@ header{
 }
 
 .header-title{
+    align-self: center;
     border-bottom: 4px solid #AACE9B;
     font-size: 40px;
     font-weight: bolder;
-    align-self: center;
 }
 
 @media screen and (min-width: 900px) {
     .header-title{
+        width: 100%;
         font-size: 30px;
-        width: 100%
     }
 
     .icon-menu{

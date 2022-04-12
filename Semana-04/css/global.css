@@ -1,8 +1,8 @@
 body{
-    line-height: normal;
     display: flex;
     flex-direction: row;
     color: #373867;
+    line-height: normal;
 }
 
 .column-1{
@@ -36,9 +36,6 @@ h1{
     h1{
         font-size: 64px;
         text-align: left;
-    }
-    
-    .column-1{
     }
 }
 
