@@ -2,7 +2,7 @@ main{
     display: flex;
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
-    margin-top: 20%;
+    margin-top: 22%;
 }
 
 article{
@@ -25,7 +25,7 @@ textarea{
 }
 
 #first-image{
-    width: 145px; 
+    width: 145px;
     padding-top: 20px;
 }
 
@@ -37,7 +37,7 @@ textarea{
 }
 
 #introduction{
-    padding-top: 76px;
+    /* padding-top: 76px; */
     margin-left: 11px;
     font-size: 24px;
     color: #545454;
@@ -147,7 +147,7 @@ textarea{
 .nav-bar-title{
     width: 268px;
     border-bottom: 4px solid #AACE9B;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -160,6 +160,7 @@ textarea{
 
 .nav-bar-list-item{
     margin-left: 50px;
+    font-size: 20px;
 }
 
 @media screen and (min-width: 480px) {
@@ -167,9 +168,46 @@ textarea{
 }
 
 @media screen and (min-width: 768px) {
+    main{
+        margin-top: 24%;
+        margin-left: 8%;
+    }
 
+    #first-image{
+        width: 226px;
+        padding-top: 20px;
+    }
+
+    .container-nav-bar{
+        justify-content: space-between;
+    }
+
+    .nav-bar{
+        width: 160px;
+    }
+
+    .nav-bar-title{
+        font-size: 24px;
+    }
+
+    .nav-bar-list-item{
+        font-size: 18px;
+        margin-left: none;
+    }
 }
 
 @media screen and (min-width: 900px) {
+    main{
+        margin-left: 14%;
+        margin-top: 16%;
+    }
 
+    #first-image{
+        width: 470px;
+        padding-top: 20px;
+    }
+
+    .nav-bar{
+        width: 140px;
+    }
 }

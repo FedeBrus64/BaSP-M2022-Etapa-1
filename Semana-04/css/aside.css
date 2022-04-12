@@ -2,12 +2,14 @@ aside{
     display:none;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 768px) {
     aside{
         display:flex;
         position: fixed;
         flex-direction: column;
-        width: 25%;
+        flex-wrap: wrap;
+        width: 28%;
+        height: auto;
         background-color: white;
         border-right: 2px solid;
         font-family: 'Raleway', sans-serif;
@@ -15,22 +17,18 @@ aside{
     }
 
     #left-bar-list{
-        padding-top: 20px;
-        margin-right: 60px;
-        margin-left: 46px;
-        padding-bottom: 73px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 4%;
         border-bottom: 1px solid #A4A4A4;
         list-style-type: none;
-        line-height: 51px;
+        line-height: 50px;
     }
     
     #left-bar-paragraph{
-        padding-left: 44px;
-        padding-right: 52px;
-        padding-top: 20px;
-        height: 147px;
-        width: 280px;
-        font-size: 18px;
+        height: auto;
+        width: 100%;
+        font-size: 16px;
     }
     
     #img-email{
@@ -56,15 +54,13 @@ aside{
 
     .icon-search{
         position: absolute;
-        padding-left: 48px;
         padding-top: 40px;
         width: 25px;
     }
 
     .left-bar-input{
         height: 40px;
-        width: 252px; 
-        margin-left: 40px;
+        width: 80%; 
         margin-top: 30px;
     }
     
@@ -73,9 +69,7 @@ aside{
     }
     
     .left-bar-title{
-        margin-left: 45px;
-        margin-right: 50px;
-        margin-top: 40px;
+        margin-top: 10px;
         padding-bottom: 12px;
         border-bottom: 4px solid #AACE9B;
         font-size: 24px;
@@ -87,21 +81,37 @@ aside{
     }
     
     .container-aside{
-        padding-top: 30px;
+        display:flex;
+        flex-direction: column;
     }
     
     .container-contact{
-        margin-left: 50px;
-        margin-top: 10px;
-        padding-bottom: 20px;
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 18px;
+        padding-bottom: 6px;
         border-bottom:2px solid #AACE9B;
     }
     
     .contact-img{
-        padding-right: 10px;
+        align-self: center;
     }
     
     .contact-info{
-        padding-left: 12px;
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .container-contact{
+        flex-direction: row;
+        padding-top: 4%;
+    }
+
+    .contact-info{
+        text-align: left;
+        width: 80%;
     }
 }
