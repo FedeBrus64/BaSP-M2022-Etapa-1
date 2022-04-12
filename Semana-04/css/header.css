@@ -15,7 +15,7 @@ header{
 
 .header-title{
     border-bottom: 4px solid #AACE9B;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: bolder;
     align-self: center;
 }
@@ -23,12 +23,10 @@ header{
 @media screen and (min-width: 900px) {
     .header-title{
         font-size: 30px;
-        margin-left: 4%;
         width: 100%
     }
 
     .icon-menu{
         font-size: 44px;
-        margin-left: 7%;
     }
 }

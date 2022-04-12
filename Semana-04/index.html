@@ -31,16 +31,16 @@
             </header>
             
             <main>
-                <section class="first-section">
-                    <div class="container-image-text-first-section"></div>
-                    <div class="container-text-first-section">
-                        <h1> Welcome to Trackgenix!</h1>
+                <section class="first-section-mobile">
+                    <h1> Welcome to Trackgenix!</h1>
+                    
+                    <div class="container-image-crest">
                         <p id="crest">
                             A free website for everyone at Trackgenix!
-                        </p>  
+                        </p>
+
+                        <img id="first-image" src="img/trackgenix1.png" alt="trackgenix">
                     </div>
-        
-                    <img id="first-image" src="img/trackgenix1.png" alt="trackgenix">
 
                     <div id="introduction">
                         Here, you can register the hours worked in any project for all employees, 
@@ -48,56 +48,91 @@
                     </div>
                     <button id="learn-more">LEARN MORE</button>
                 </section>
+
+                <section class="first-section">
+                    <div class="container-image-text-first-section">
+                        <div class="container-text-first-section">
+                            <h1> Welcome to Trackgenix!</h1>
+                            <p id="crest">
+                                A free website for everyone at Trackgenix!
+                            </p>
+                            
+                        </div>
+                        <div class="container-image">
+                            <img id="first-image" src="img/trackgenix1.png" alt="trackgenix">
+                        </div>  
+                    </div>
+                    <div id="introduction">
+                        <p>
+                            Here, you can register the hours worked in any project for all employees, 
+                            generate reports and much more.
+                        </p>
+                    </div>
+                    <button id="learn-more">LEARN MORE</button> 
+                </section>
                 
                 <section>
                     <div class="title-section">What can you do?</div>
                     <div class="container-what-can-you-do">
                         <article>
-                            <img class="img-box-1" src="img/records.png" alt="records">
-
-                            <div class="title-box-1">
-                                Record hours
+                            <div class="container-image-what-can-you-do">
+                                <img class="img-box-1" src="img/records.png" alt="records">
                             </div>
-
-                            <div class="text-box-1">
-                                Create, modify and delete projects and assign them to any employee/s.
+                            <div class="container-text-what-can-you-do">
+                                <div class="title-box-1">
+                                    Record hours
+                                </div>
+    
+                                <div class="text-box-1">
+                                    Create, modify and delete projects and assign them to any employee/s.
+                                </div>
                             </div>
                         </article>
             
                         <article>
-                            <img class="img-box-1" src="img/reports.png" alt="reports">
-
-                            <div class="title-box-1">
-                                Generate reports
+                            <div class="container-image-what-can-you-do">
+                                <img class="img-box-1" src="img/reports.png" alt="reports">
                             </div>
-                            
-                            <div class="text-box-1">
-                                Emit reports to have a better view and understanding of all the projects.
-                            </div>
-                        </article>
-                        
-                        <article>
-                            <img class="img-box-1" src="img/resources.png" alt="resources">
-
-                            <div class="title-box-1">
-                                Manage resources
-                            </div>
-                            
-                            <div class="text-box-1">
-                                You will be able to see all the information
-                                you need to organize hours of work in the best way possible.
+                            <div class="container-text-what-can-you-do">
+                                <div class="title-box-1">
+                                    Generate reports
+                                </div>
+                                
+                                <div class="text-box-1">
+                                    Emit reports to have a better view and understanding of all the projects.
+                                </div>
                             </div>
                         </article>
                         
                         <article>
-                            <img class="img-box-1" src="img/roles.png" alt="roles">
-
-                            <div class="title-box-1">
-                                Designate roles
+                            <div class="container-image-what-can-you-do">
+                                <img class="img-box-1" src="img/resources.png" alt="resources">
                             </div>
-                            
-                            <div class="text-box-1">
-                                Establish which employee may have the title of "project manager" among others.
+                            <div class="container-text-what-can-you-do">
+                                <div class="title-box-1">
+                                    Manage resources
+                                </div>
+                                
+                                <div class="text-box-1">
+                                    You will be able to see all the information
+                                    you need to organize hours of work in the best way possible.
+                                </div>
+                            </div>
+
+                        </article>
+                        
+                        <article>
+                            <div class="container-image-what-can-you-do">
+                                <img class="img-box-1" src="img/roles.png" alt="roles">
+                            </div>
+                            <div class="container-text-what-can-you-do">
+                                <div class="title-box-1">
+                                    Designate roles
+                                </div>
+                                
+                                <div class="text-box-1">
+                                    Establish which employee may have the title of "project manager" among others.
+                                </div>
                             </div>
                         </article>
                     </div>
@@ -117,6 +152,7 @@
                     <div class="title-section">Contact form</div>
                     <form>
                         <fieldset>
+                            <div class="container-form-fields">
                             <div class="form-container">
                                 <label>Business name</label>
                                 <input class="form-text" type="text" name="business-name">
@@ -157,11 +193,9 @@
                                 <label>Message</label>
                                 <textarea name="message"></textarea>
                             </div>
-
-                            <div>
-                                <div class="form-container">
-                                    <input class="form-button" type="submit" name="submit" value="SEND">
-                                </div>
+                            </div>
+                            <div class="form-container">
+                                <input class="form-button" type="submit" name="submit" value="SEND">
                             </div>
                         </fieldset>
                     </form>
