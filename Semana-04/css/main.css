@@ -217,10 +217,6 @@ textarea{
         width: 100%;
     }
 
-    textarea{
-        width:250%;
-    }
-
     #first-image{
         flex:1;
     }

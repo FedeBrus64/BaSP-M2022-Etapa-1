@@ -30,5 +30,18 @@ If you have any questions and/or issues with the software, please send an email 
 
 © 2022 Radium Rocket. All rights reserved.
 
+## Week 2
 
+The second week consisted in creating an html file including all of the components used in the prototype.
 
+## Week 3
+
+The third week consisted in styling the page created in the previous week to match the styles as perfectly as possible.
+
+## Week 4
+
+The fourth week consisted in using flexbox and separating the application's css files to make it responsive.
+
+## Week 5
+
+The fifth week consisted in solving some JavaScript exercises to learn some commands an the dynamic of the programming language.
