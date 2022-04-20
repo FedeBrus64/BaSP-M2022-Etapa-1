@@ -25,6 +25,7 @@ h1{
 @media screen and (min-width: 768px) {
     .column-2{
         display:flex;
+        width: 75%
     }
 
     h1{
@@ -39,3 +40,8 @@ h1{
     }
 }
 
+@media screen and (min-width: 1024px) {
+    .column-2{
+        width: 50%;
+    }
+}
