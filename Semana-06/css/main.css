@@ -1,0 +1,290 @@
+main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    font-family: 'Poppins', sans-serif;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 380px;
+    text-align: center;
+}
+
+form{
+    background-color: #E5E5E5;
+    border: 1px solid black;
+}
+
+textarea{
+    resize: none;
+}
+
+#first-image{
+    width: 145px;
+    padding-top: 20px;
+}
+
+#crest{
+    padding-top: 41px;
+    width:250px;
+    font-style: italic;
+    font-size: 28px;
+}
+
+#introduction{
+    margin-left: 11px;
+    font-size: 24px;
+    color: #545454;
+}
+
+#learn-more{
+    width: 144px;
+    height: 51px;
+    margin-top: 80px;
+    margin-left: 10px;
+    background-color: #AACE9B;
+    border-radius: 4px;
+    color:#373867;
+}
+
+.first-section{
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.container-image-crest{
+    display:flex;
+    flex-direction: row;
+}
+
+.container-what-can-you-do{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.title-section, .history-title{
+    margin-left: 17px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #AACE9B;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #373867;
+}
+
+.img-box-1{
+    align-self: center;
+    width: 180px;
+}
+
+.title-box-1{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.list-box-2{
+    padding-left: 30px;
+    font-size: 28px;
+    line-height: 82px;
+    list-style-type: '✓';
+    list-style-position: outside;
+}
+
+.item-box-2{
+    padding-left: 29px;
+    font-size: 20px;
+}
+
+.container-form-fields{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.form-button{
+    align-self: center;
+    width: 94px;
+    height: 41px;
+    background-color: #AACE9B;
+    font-size:18px;
+}
+
+.history-image{
+    display: none;
+}
+
+.container-data-security{
+    display: none;
+}
+
+.img-history{
+    display: none;
+}
+
+.container-effective-in-time{
+    display: none;
+}
+
+.foundation, .objective{
+    margin-bottom: 2%;
+}
+
+.container-nav-bar{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-bar-title{
+    width: 268px;
+    border-bottom: 4px solid #AACE9B;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nav-bar-list{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    line-height: 40px;
+    list-style-type:decimal;
+}
+
+.nav-bar-list-item{
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    main{
+        margin-top: 120px;
+    }
+
+    article{
+        flex: 1;
+        flex-wrap: nowrap;
+    }
+
+    #first-image{
+        width: 226px;
+        padding-top: 20px;
+    }
+
+    .title-box-1{
+        font-size: 20px;
+    }
+
+    .container-nav-bar{
+        justify-content: space-between;
+    }
+
+    .nav-bar{
+        width: 160px;
+    }
+
+    .nav-bar-title{
+        font-size: 24px;
+    }
+
+    .nav-bar-list-item{
+        margin-left: none;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    main{
+        margin-top: 120px;
+    }
+
+    article{
+        flex-direction: row;
+        flex: 1;
+    }
+
+    #first-image{
+        flex:1;
+    }
+
+    .first-section-mobile{
+        display:none;
+    }
+
+    .first-section{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .container-image-text-first-section{
+        display: flex;
+        flex-direction: row;
+        flex:1;
+        flex-wrap: wrap;
+    }
+
+    .container-text-first-section{
+        display: flex;
+        flex-direction: column;
+        flex:1;
+    }
+
+    .container-image{
+        display: flex;
+        width: 40%;
+    }
+
+    .container-what-can-you-do{
+        margin-right: 11%;
+    }
+
+    .img-box-1{
+        width: 140px;
+    }
+
+    .container-form-fields{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .form-container{
+        margin-right: 20%;
+        margin-bottom: 2%;
+    }
+
+    .form-button{
+        align-self: end;
+    }
+
+    .container-nav-bar{
+        flex-direction: row;
+    }
+
+    .nav-bar{
+        flex:1;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    article{
+    }
+
+    .img-box-1{
+        width: 180px;
+    }
+
+}

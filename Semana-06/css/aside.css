@@ -1,0 +1,117 @@
+aside{
+    display:none;
+    position: fixed;
+    width: 28%;
+    height: auto;
+    background-color: white;
+    border-right: 2px solid;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+    aside{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #left-bar-list{
+        display: flex;
+        flex-direction: column;
+        margin-left: 4%;
+        border-bottom: 1px solid #A4A4A4;
+        list-style-type: none;
+        line-height: 50px;
+    }
+    
+    #left-bar-paragraph{
+        height: auto;
+        width: 100%;
+        font-size: 16px;
+    }
+    
+    #img-email{
+        width: 34px;
+        height: 25px;
+        float: left;
+    }
+    #img-adress{
+        width: 34px;
+        height: 37px;
+        float: left;
+    }
+    
+    #container-telephone{
+        border:none;
+    }
+    
+    #img-tel-number{
+        width: 40px;
+        height: 47px;
+        float: left;
+    }
+
+    .icon-search{
+        position: absolute;
+        padding-top: 40px;
+        width: 25px;
+    }
+
+    .left-bar-input{
+        height: 40px;
+        width: 80%; 
+        margin-top: 30px;
+    }
+    
+    .left-bar-input[type = text]{
+        padding-left: 36px;
+    }
+    
+    .left-bar-title{
+        margin-top: 10px;
+        padding-bottom: 12px;
+        border-bottom: 4px solid #AACE9B;
+        font-size: 24px;
+        font-weight: bolder;
+    }
+    
+    .left-bar-item{
+        border-bottom: 1px solid #A4A4A4
+    }
+    
+    .container-aside{
+        display:flex;
+        flex-direction: column;
+    }
+    
+    .container-contact{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 18px;
+        padding-bottom: 6px;
+        border-bottom:2px solid #AACE9B;
+    }
+    
+    .contact-img{
+        align-self: center;
+    }
+    
+    .contact-info{
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .container-contact{
+        flex-direction: row;
+        padding-top: 4%;
+    }
+
+    .contact-info{
+        width: 80%;
+        text-align: left;
+    }
+}

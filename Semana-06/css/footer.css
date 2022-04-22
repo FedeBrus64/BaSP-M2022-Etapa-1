@@ -1,0 +1,11 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    align-items: center;
+}
+
+.contact-img{
+    width:50px;
+}
