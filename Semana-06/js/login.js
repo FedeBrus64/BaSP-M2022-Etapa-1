@@ -19,11 +19,12 @@ window.onload = function () {
                 }
             }
         }
+
+        var palabra = "hola"
+        for (i = 0; i < palabra.length; i++){
+            console.log(palabra.substring(i, i+1));
+        }
         
-        console.log("gaga")
-        console.log(Number.isInteger(password.value));
-        console.log((password.value.toLowerCase() ==
-        (password.value.toUpperCase())))
 
     }, true);
 
@@ -35,7 +36,6 @@ window.onload = function () {
         if(email.value.match(emailCheck) == null){
             errorMessageEmail.style.display = 'flex';
         }
-        console.log(email.value.match(emailCheck));
     }, true)
 
     email.addEventListener("focus", function(){
