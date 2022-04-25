@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    height: 20%;
+    background-color: #ACA3A0;
+    font-family: 'Raleway', sans-serif;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20%;
+    background-color: #373867;
+    border-top: 6px solid #AACE9B;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+h1{
+    font-size: 49px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60%;
+    align-self: center;
+    font-family: 'Raleway', sans-serif;
+    color: #373867;
+}
+
+form{
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+label{
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.header-title{
+    font-size: 30px;
+    font-weight: bolder;
+    font-style: italic;
+    margin: 37px;
+}
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.form-text{
+    width:260px;
+    height: 37px;
+    font-size: 14px;
+}
+
+.error-message {
+    display: none;
+    font-size: 10px;
+    color: red;
+}
+
+.form-button{
+    width:268px;
+    height:47px;
+    align-self: center;
+    background-color: #AACE9B;
+    font-size: 24px;
+}

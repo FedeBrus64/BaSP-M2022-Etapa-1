@@ -45,3 +45,7 @@ The fourth week consisted in using flexbox and separating the application's css 
 ## Week 5
 
 The fifth week consisted in solving some JavaScript exercises to learn some commands an the dynamic of the programming language.
+
+## Week 6
+
+The sixth week consisted in creating the log in and employee register pages, including html, css and javascript, to solve things like password validation.

@@ -4,7 +4,12 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Sign up</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="css/employee-signup.css">
+        <script src="js/employee-signup.js"></script>
     </head>
     <body>
         <header>
@@ -18,36 +23,134 @@
                 Sign up
             </h1>
             <form>
-                <label>
-                    Name
-                </label>
-                <input class= "form-text" type="text" placeholder="name" name="name">
+                <div class="container-form">
+                    <label>
+                        Name
+                    </label>
+                    <input class= "form-text" type="text" placeholder="name" name="name">
+                    <p class="error-message" id="error-message-name">
+                        Name must contain at least 3 letters
+                    </p>
+                </div>
 
-                <label>
-                    Surname
-                </label>
-                <input class= "form-text" type="text" placeholder="surname" name="surname">
+                <div class="container-form">
+                    <label>
+                        Surname
+                    </label>
+                    <input class= "form-text" type="text" placeholder="surname" name="surname">
+                    <p class="error-message" id="error-message-surname">
+                        Surname must contain at least 3 letters
+                    </p>
+                </div>
 
-                <label>
-                    Email
-                </label>
-                <input class= "form-text" type="text" placeholder="email" name="email">
+                <div class="container-form">
+                    <label>
+                        ID
+                    </label>
+                    <input class="form-text" type="number" placeholder="ID" name="ID">
+                    <p class="error-message" id="error-message-id">
+                        ID must contain more than 7 numbers
+                    </p>
+                </div>
 
-                <label>
-                    Repeat email
-                </label>
-                <input class= "form-text" type="text" placeholder="repeat email" name="repeat-email">
+                <div class="container-form">
+                    <label>
+                        Date of birth
+                    </label>
+                    <input class="form-text" type="date" name="date-of-birth">
+                </div>
 
-                <label>
-                    Password
-                </label>
-                <input class= "form-text" type="password" placeholder="password" name="password">
+                <div class="container-form">
+                    <label>
+                        Telephone
+                    </label>
+                    <input class="form-text" type="number" placeholder="telephone" name="telephone">
+                    <p class="error-message" id="error-message-telephone">
+                        Telephone must contain 10 numbers
+                    </p>
+                </div>
 
-                <label>
-                    Repeat password
-                </label>
-                <input class= "form-text" type="password" placeholder="repeat password" name="repeat-password">
+                <div class="container-form">
+                    <label>
+                        Address
+                    </label>
+                    <input class="form-text" type="text" placeholder="address" name="address">
+                    <p class="error-message" id="error-message-address">
+                        Address must contain at least 5 characters including letters, numbers and a space
+                    </p>
+                </div>
 
+                <div class="container-form">
+                    <label>
+                        Location
+                    </label>
+                    <input class="form-text" type="text" placeholder="location" name="location">
+                    <p class="error-message" id="error-message-location">
+                        Location must contain more than 3 alphanumeric characters
+                    </p>
+                </div>
+
+                <div class="container-form">
+                    <label>
+                        Postal code
+                    </label>
+                    <input class="form-text" type="number" placeholder="postal code" name="postal-code">
+                    <p class="error-message" id="error-message-postal-code">
+                        Postal code must contain between 4 and 5 numbers
+                    </p>
+                </div>
+
+                <div class="container-form">
+                    <label>
+                        Email
+                    </label>
+                    <input class= "form-text" type="text" placeholder="email" name="email">
+                    <p class="error-message" id="error-message-email">
+                        The email is not valid
+                    </p>
+                    <p class="error-message" id="error-message-email-coincide">
+                        Emails do not coincide
+                    </p>
+                </div>
+
+                <div class="container-form">
+                    <label>
+                        Repeat email
+                    </label>
+                    <input class= "form-text" type="text" placeholder="repeat email" name="repeat-email">
+                    <p class="error-message" id="error-message-repeat-email">
+                        The email is not valid
+                    </p>
+                    <p class="error-message" id="error-message-repeat-email-coincide">
+                        Emails do not coincide
+                    </p>
+                </div>
+
+                <div class="container-form">
+                    <label>
+                        Password
+                    </label>
+                    <input class= "form-text" type="password" placeholder="password" name="password">
+                    <p class="error-message" id="error-message-password">
+                        Password must contain at least 8 alphanumeric characters
+                    </p>
+                    <p class="error-message" id="error-message-password-coincide">
+                        Passwords do not coincide
+                    </p>
+                </div>
+
+                <div class="container-form">
+                    <label>
+                        Repeat password
+                    </label>
+                    <input class= "form-text" type="password" placeholder="repeat password" name="repeat-password">
+                    <p class="error-message" id="error-message-repeat-password">
+                        Password must contain at least 8 alphanumeric characters
+                    </p>
+                    <p class="error-message" id="error-message-repeat-password-coincide">
+                        Passwords do not coincide
+                    </p>
+                </div>
                 <input class="form-button" type="submit" name="button-sign-up" value="Sign up">
             </form>
         </main>

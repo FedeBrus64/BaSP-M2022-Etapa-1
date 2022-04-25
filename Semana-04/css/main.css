@@ -280,9 +280,6 @@ textarea{
 }
 
 @media screen and (min-width: 1024px){
-    article{
-    }
-
     .img-box-1{
         width: 180px;
     }
