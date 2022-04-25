@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    height: 20%;
+    background-color: #ACA3A0;
+    font-family: 'Raleway', sans-serif;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20%;
+    background-color: #373867;
+    border-top: 6px solid #AACE9B;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+h1{
+    font-size: 49px;
+}
+
+main{
+    height: 60%;
+    align-self: center;
+    font-family: 'Raleway', sans-serif;
+    color: #373867;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+label{
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+#error-message-email, #error-message-password{
+    display:none;
+    font-size: 10px;
+    color: red;
+}
+
+.header-title{
+    font-size: 30px;
+    font-weight: bolder;
+    font-style: italic;
+    margin: 37px;
+}
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.container-form-checkbox{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.form-text{
+    width:260px;
+    height: 37px;
+    font-size: 14px;
+}
+
+.form-button{
+    width:268px;
+    height:47px;
+    background-color: #AACE9B;
+    font-size: 24px;
+}
+
+.label-remember-me{
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.anchor-forgot-password{
+    font-size: 14px;
+    font-style: italic;
+}
+
+@media screen and (min-width: 768px){
+
+}
