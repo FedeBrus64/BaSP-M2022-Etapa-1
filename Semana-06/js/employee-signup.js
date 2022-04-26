@@ -185,6 +185,8 @@ window.onload = function () {
 
     location.addEventListener("blur", function() {
         locationOK = true;
+        var letterCounter = 0;
+
         if (location.value.length <= 3 ) {
             locationOK = false;
             errorMessageLocation.style.display = 'flex';
@@ -200,6 +202,19 @@ window.onload = function () {
                 }
             }
         }
+
+        for (i = 0; i < location.value.length; i++){
+            if (location.value.substring(i, i+1).toLowerCase() != 
+            location.value.substring(i, i+1).toUpperCase()) {
+                letterCounter = letterCounter + 1;
+            }
+        }
+
+        if (letterCounter <= 3){
+            locationOK = false;
+            errorMessageLocation.style.display = 'flex';
+        }
+
     }, true);
 
     location.addEventListener("focus", function() {
