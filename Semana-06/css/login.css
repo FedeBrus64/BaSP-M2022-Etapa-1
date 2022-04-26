@@ -93,6 +93,12 @@ label{
     font-style: italic;
 }
 
+.container-links{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
 @media screen and (min-width: 900px){
     .header-title{
         font-size: 30px;

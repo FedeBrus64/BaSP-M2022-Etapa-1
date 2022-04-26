@@ -37,7 +37,6 @@ main{
 
 form{
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
     width: 50%;
     justify-content: space-between;
@@ -49,10 +48,16 @@ label{
     font-weight: bolder;
 }
 
+#container-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .header-title{
-    font-size: 30px;
+    font-size: 50px;
     font-weight: bolder;
-    font-style: italic;
+    text-align: center;
     margin: 37px;
 }
 
@@ -77,7 +82,32 @@ label{
 .form-button{
     width:268px;
     height:47px;
-    align-self: center;
     background-color: #AACE9B;
     font-size: 24px;
+}
+
+.container-links{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+@media screen and (min-width: 900px){
+    form{
+        width: 70%;
+    }
+
+    .header-title{
+        font-size: 30px;
+        font-style: italic;
+        margin: 37px;
+        text-align: start;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    form{
+        width: 60%;
+    }
 }

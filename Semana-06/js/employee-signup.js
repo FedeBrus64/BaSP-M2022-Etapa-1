@@ -391,6 +391,7 @@ window.onload = function () {
 
         if (formOK == true){
             window.alert('Employee successfully created');
+            window.location.href = ('index.html');
         }
     }
 }

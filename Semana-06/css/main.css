@@ -119,6 +119,12 @@ textarea{
     font-size:18px;
 }
 
+.error-message{
+    display: none;
+    font-size: 10px;
+    color: red;
+}
+
 .history-image{
     display: none;
 }

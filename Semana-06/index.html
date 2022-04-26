@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/aside.css">
         <link rel="stylesheet" href="css/footer.css">
+        <script src="js/contact.js"></script>
     </head>
 
     <body>
@@ -158,47 +159,59 @@
                             <div class="container-form-fields">
                                 <div class="form-container">
                                     <label>Business name</label>
-                                    <input class="form-text" type="text" name="business-name">
+                                    <input class="form-text" type="text" name="business-name" required>
+                                    <p class="error-message" id="error-message-business-name">
+                                        Business name must contain more than 3 letters
+                                    </p>
                                 </div>
 
                                 <div class="form-container">
                                     <label>Email</label>
-                                    <input class="form-text" type="email" name="email">
+                                    <input class="form-text" type="email" name="email" required>
+                                    <p class="error-message" id="error-message-email">
+                                        The email is not valid
+                                    </p>
                                 </div>
             
                                 <div class="form-container">
                                     <label>Contact area</label>
                                     <div>   
                                         <input type="radio" id="human-resources" name="contact-area" 
-                                        value="human-resources">   
+                                        value="human-resources" required>   
                                         <label class="radio-label">Human resources</label>        
                                     </div>
             
                                     <div>
                                         <input type="radio" id="commercialization" name="contact-area" 
-                                        value="commercialization">
+                                        value="commercialization" required>
                                         <label class="radio-label">Commercialization</label>            
                                     </div>
             
                                     <div>
                                         <input type="radio" id="systems" name="contact-area" 
-                                        value="systems">
+                                        value="systems" required>
                                         <label class="radio-label">Systems</label>
                                     </div>
                                 </div>
 
                                 <div class="form-container">
                                     <label>Phone number</label>
-                                    <input class="form-text" type="tel" name="phone-number">
+                                    <input class="form-text" type="number" name="phone-number" required>
+                                    <p class="error-message" id="error-message-phone-number">
+                                        The phone number must contain 10 numbers
+                                    </p>
                                 </div>
             
                                 <div class="form-container">
                                     <label>Message</label>
-                                    <textarea name="message"></textarea>
+                                    <textarea name="message" required></textarea>
+                                    <p class="error-message" id="error-message-message">
+                                        The message must contain more than 3 alphanumeric characters
+                                    </p>
                                 </div>
                             </div>
                             <div class="form-container">
-                                <input class="form-button" type="submit" name="submit" value="SEND">
+                                <input class="form-button" type="submit" name="button-submit" value="SEND">
                             </div>
                         </fieldset>
                     </form>
@@ -314,8 +327,8 @@
 
                 <ul id="left-bar-list">
                     <li class="left-bar-item"><a href="#">Home</a></li>
-                    <li class="left-bar-item"><a href="#">Sign up</a></li>
-                    <li><a href="#">Log in</a></li>
+                    <li class="left-bar-item"><a href="employee-signup.html">Sign up</a></li>
+                    <li><a href="login.html">Log in</a></li>
                 </ul>
 
                 <div class="left-bar-title">Get in touch</div>
