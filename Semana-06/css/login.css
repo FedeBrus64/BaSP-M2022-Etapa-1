@@ -51,9 +51,9 @@ label{
 }
 
 .header-title{
-    font-size: 30px;
+    font-size: 50px;
     font-weight: bolder;
-    font-style: italic;
+    text-align: center;
     margin: 37px;
 }
 
@@ -93,6 +93,11 @@ label{
     font-style: italic;
 }
 
-@media screen and (min-width: 768px){
-
+@media screen and (min-width: 900px){
+    .header-title{
+        font-size: 30px;
+        font-style: italic;
+        margin: 37px;
+        text-align: start;
+    }
 }
