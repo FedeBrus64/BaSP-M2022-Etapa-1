@@ -119,11 +119,40 @@ window.onload = function () {
 
     dateOfBirth.addEventListener("blur", function(){
         var today = new Date();
+        var dateSubmitted = new Date(dateOfBirth.value);
         dateOfBirthOK = true;
-        if ((today.getFullYear() - dateOfBirth.value.getFullYear()) < 18){
 
+        if (dateOfBirth.value == ''){
+            dateOfBirthOK = false;
+            errorMessageDateOfBirth.style.display = 'flex';
         }
-        console.log(dateOfBirth.value);
+
+        if (dateSubmitted.getFullYear() > today.getFullYear()){
+            dateOfBirthOK = false;
+            errorMessageDateOfBirth.style.display = 'flex';
+        }
+
+        if ((today.getFullYear() - dateSubmitted.getFullYear()) < 18){
+            dateOfBirthOK = false;
+            errorMessageDateOfBirth.style.display = 'flex';
+        }
+
+        else if ((today.getFullYear() - dateSubmitted.getFullYear()) == 18){
+            if (today.getMonth() < dateSubmitted.getMonth()){
+                dateOfBirthOK = false;
+                errorMessageDateOfBirth.style.display = 'flex';
+            }
+            else if (today.getMonth() == dateSubmitted.getMonth()){
+                if (today.getDate() < dateSubmitted.getDate()){
+                    dateOfBirthOK = false;
+                    errorMessageDateOfBirth.style.display = 'flex';
+                }
+            }
+        }
+    }, true);
+
+    dateOfBirth.addEventListener("focus", function() {
+        errorMessageDateOfBirth.style.display = 'none';
     }, true);
 
     address.addEventListener("blur", function() {
@@ -322,7 +351,7 @@ window.onload = function () {
 
         if (dateOfBirthOK == false){
             formOK = false;
-            window.alert('');
+            window.alert('The date of birth is not valid. You must be at least 18 years old');
         }
 
         if (addressOK == false){
