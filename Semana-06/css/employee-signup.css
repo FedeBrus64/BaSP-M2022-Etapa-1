@@ -1,6 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
+    line-height: normal;
 }
 
 header{
@@ -12,7 +13,9 @@ header{
 footer{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+    padding: 1.4%;
     height: 20%;
     background-color: #373867;
     border-top: 6px solid #AACE9B;
@@ -23,14 +26,15 @@ footer{
 
 h1{
     font-size: 49px;
+    font-weight: bolder;
 }
 
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 60%;
     align-self: center;
+    margin-top: 20px;
     font-family: 'Raleway', sans-serif;
     color: #373867;
 }
@@ -38,8 +42,8 @@ main{
 form{
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
     justify-content: space-between;
+    width: 50%;
     margin-bottom: 16px;
 }
 
@@ -48,17 +52,11 @@ label{
     font-weight: bolder;
 }
 
-#container-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .header-title{
+    margin: 37px;
     font-size: 50px;
     font-weight: bolder;
     text-align: center;
-    margin: 37px;
 }
 
 .container-form{
@@ -75,6 +73,7 @@ label{
 
 .error-message {
     display: none;
+    width:260px;
     font-size: 10px;
     color: red;
 }
@@ -89,8 +88,12 @@ label{
 .container-links{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
     width: 200px;
+    margin-bottom: 10px;
+}
+
+.social-media{
+    margin: 8px;
 }
 
 @media screen and (min-width: 900px){
@@ -99,15 +102,15 @@ label{
     }
 
     .header-title{
+        margin: 37px;
         font-size: 30px;
         font-style: italic;
-        margin: 37px;
         text-align: start;
     }
 }
 
 @media screen and (min-width: 1024px){
     form{
-        width: 60%;
+        width: 55%;
     }
 }

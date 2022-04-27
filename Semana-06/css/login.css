@@ -1,6 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
+    line-height: normal;
 }
 
 header{
@@ -13,6 +14,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     height: 20%;
     background-color: #373867;
     border-top: 6px solid #AACE9B;
@@ -23,11 +25,13 @@ footer{
 
 h1{
     font-size: 49px;
+    font-weight: bolder;
 }
 
 main{
-    height: 60%;
     align-self: center;
+    height: 60%;
+    margin: 2%;
     font-family: 'Raleway', sans-serif;
     color: #373867;
 }
@@ -37,6 +41,7 @@ form{
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 16px;
+    margin-top: 20px;
 }
 
 label{
@@ -46,15 +51,16 @@ label{
 
 #error-message-email, #error-message-password{
     display:none;
+    margin-top: 5px;
     font-size: 10px;
     color: red;
 }
 
 .header-title{
+    margin: 37px;
     font-size: 50px;
     font-weight: bolder;
     text-align: center;
-    margin: 37px;
 }
 
 .container-form{
@@ -101,9 +107,9 @@ label{
 
 @media screen and (min-width: 900px){
     .header-title{
+        margin: 37px;
         font-size: 30px;
         font-style: italic;
-        margin: 37px;
         text-align: start;
     }
 }
