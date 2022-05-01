@@ -48,4 +48,8 @@ The fifth week consisted in solving some JavaScript exercises to learn some comm
 
 ## Week 6
 
-The sixth week consisted in creating the log in and employee register pages, including html, css and javascript, to solve things like password validation.
+The sixth week consisted in creating the log in and employee register pages, including html, css and javascript, to validate every field in all forms, verifying if they respected parameters such as length or character types.
+
+## Week 7
+
+The seventh week consisted in using an API to send the information from every form using fetch and query-params. The API also verified if the email and the password were equal to some values already submitted in it.

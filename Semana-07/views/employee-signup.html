@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign up</title>
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="../css/employee-signup.css">
+        <script src="../js/employee-signup.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class = "header-title">
+                Trackgenix S.A
+            </div>
+        </header>
+
+        <main>
+            <h1>
+                Sign up
+            </h1>
+            <form>
+                <div class="container-form">
+                    <label>
+                        Name
+                    </label>
+                    <input class= "form-text" type="text" placeholder="name" name="name">
+                    <p class="error-message" id="error-message-name">
+                        Name must contain more than 3 letters
+                    </p>
+                </div>
+
+                <div class="container-form">
+                    <label>
+                        Surname
+                    </label>
+                    <input class= "form-text" type="text" placeholder="surname" name="surname">
+                    <p class="error-message" id="error-message-surname">
+                        Surname must contain more than 3 letters
+                    </p>
+                </div>
+
+                <div class="container-form">
+                    <label>
+                        ID
+                    </label>
+                    <input class="form-text" type="number" placeholder="ID" name="ID">
+                    <p class="error-message" id="error-message-id">
+                        ID must contain more than 7 numbers
+                    </p>
+                </div>
+
+                <div class="container-form">
+                    <label>
+                        Date of birth
+                    </label>
+                    <input class="form-text" type="date" name="date-of-birth">
+                    <p class="error-message" id="error-message-date-of-birth">
+                        The date of birth is not valid. You must be at least 18 years old
+                    </p>
+                </div>
+
+                <div class="container-form">
+                    <label>
+                        Telephone
+                    </label>
+                    <input class="form-text" type="number" placeholder="telephone" name="telephone">
+                    <p class="error-message" id="error-message-telephone">
+                        Telephone must contain 10 numbers
+                    </p>
+                </div>
+
+                <div class="container-form">
+                    <label>
+                        Address
+                    </label>
+                    <input class="form-text" type="text" placeholder="address" name="address">
+                    <p class="error-message" id="error-message-address">
+                        Address must contain at least 5 characters including letters, numbers and a space
+                    </p>
+                </div>
+
+                <div class="container-form">
+                    <label>
+                        Location
+                    </label>
+                    <input class="form-text" type="text" placeholder="location" name="location">
+                    <p class="error-message" id="error-message-location">
+                        Location must contain alphanumeric characters and more than 3 letters
+                    </p>
+                </div>
+
+                <div class="container-form">
+                    <label>
+                        Postal code
+                    </label>
+                    <input class="form-text" type="number" placeholder="postal code" name="postal-code">
+                    <p class="error-message" id="error-message-postal-code">
+                        Postal code must contain between 4 and 5 numbers
+                    </p>
+                </div>
+
+                <div class="container-form">
+                    <label>
+                        Email
+                    </label>
+                    <input class= "form-text" type="text" placeholder="email" name="email">
+                    <p class="error-message" id="error-message-email">
+                        The email is not valid
+                    </p>
+                    <p class="error-message" id="error-message-email-coincide">
+                        Emails do not coincide
+                    </p>
+                </div>
+
+                <div class="container-form">
+                    <label>
+                        Repeat email
+                    </label>
+                    <input class= "form-text" type="text" placeholder="repeat email" name="repeat-email">
+                    <p class="error-message" id="error-message-repeat-email">
+                        The email is not valid
+                    </p>
+                    <p class="error-message" id="error-message-repeat-email-coincide">
+                        Emails do not coincide
+                    </p>
+                </div>
+
+                <div class="container-form">
+                    <label>
+                        Password
+                    </label>
+                    <input class= "form-text" type="password" placeholder="password" name="password">
+                    <p class="error-message" id="error-message-password">
+                        Password must contain at least 8 alphanumeric characters
+                    </p>
+                    <p class="error-message" id="error-message-password-coincide">
+                        Passwords do not coincide
+                    </p>
+                </div>
+
+                <div class="container-form">
+                    <label>
+                        Repeat password
+                    </label>
+                    <input class= "form-text" type="password" placeholder="repeat password" name="repeat-password">
+                    <p class="error-message" id="error-message-repeat-password">
+                        Password must contain at least 8 alphanumeric characters
+                    </p>
+                    <p class="error-message" id="error-message-repeat-password-coincide">
+                        Passwords do not coincide
+                    </p>
+                </div>
+                <input class="form-button" type="submit" name="button-sign-up" value="Sign up">
+            </form>
+
+            <div class ="container-links">
+                <a class="anchor-go-back" href="index.html">
+                    Go back
+                </a>
+                <a class="anchor-sign-in" href="login.html">
+                    Sign in
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <p>
+                Rosario, Argentina
+            </p>
+            <img class="social-media" src="../img/social-media-login.png" alt="Social Media" /></a>
+            <p>
+                Copyright © 2022 Radium Rocket. All rights reserved.
+            </p>
+        </footer>
+    </body>
+</html>

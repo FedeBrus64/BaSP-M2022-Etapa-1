@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Log in</title>
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="../css/login.css">
+        <script src="../js/login.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class = "header-title">
+                Trackgenix S.A
+            </div>
+        </header>
+
+        <main>
+            <h1>
+                Sign in
+            </h1>
+            <form>
+                <div class="container-form">
+                    <label>
+                        Email
+                    </label>
+                    <input class= "form-text" type="text" placeholder="Email" name="email">
+                    <p id="error-message-email">
+                        The email is not valid
+                    </p>
+                </div>
+                
+                <div class="container-form">
+                    <label>
+                        Password
+                    </label>
+                    <input class= "form-text" type="password" placeholder="Password" name="password">
+                    <p id="error-message-password">
+                        Password must contain at least 8 alphanumeric characters
+                    </p>
+                </div>
+                <div class="container-form-checkbox">
+                    <div>
+                        <input type="checkbox">
+                        <label class="label-remember-me">
+                            Remember me
+                        </label>
+                    </div>
+                    <a class="anchor-forgot-password" href="#" >
+                        Forgot password?
+                    </a>
+                </div>
+
+                <div class="container-form">
+                    <input class="form-button" type="submit" name="button-log-in" value="Log in">
+                </div>
+            </form>
+
+            <div class ="container-links">
+                <a class="anchor-go-back" href="index.html">
+                    Go back
+                </a>
+                <a class="anchor-sign-in" href="employee-signup.html">
+                    Sign up
+                </a>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>
+                Rosario, Argentina
+            </p>
+            <img class="social-media" src="../img/social-media-login.png" alt="Social Media" /></a>
+            <p>
+                Copyright © 2022 Radium Rocket. All rights reserved.
+            </p>
+        </footer>
+    </body>
+</html>

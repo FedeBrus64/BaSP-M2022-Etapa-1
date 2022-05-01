@@ -1,0 +1,115 @@
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+}
+
+header{
+    height: 20%;
+    background-color: #ACA3A0;
+    font-family: 'Raleway', sans-serif;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 20%;
+    background-color: #373867;
+    border-top: 6px solid #AACE9B;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+h1{
+    font-size: 49px;
+    font-weight: bolder;
+}
+
+main{
+    align-self: center;
+    height: 60%;
+    margin: 2%;
+    font-family: 'Raleway', sans-serif;
+    color: #373867;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+label{
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+#error-message-email, #error-message-password{
+    display:none;
+    margin-top: 5px;
+    font-size: 10px;
+    color: red;
+}
+
+.header-title{
+    margin: 37px;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.container-form-checkbox{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.form-text{
+    width:260px;
+    height: 37px;
+    font-size: 14px;
+}
+
+.form-button{
+    width:268px;
+    height:47px;
+    background-color: #AACE9B;
+    font-size: 24px;
+}
+
+.label-remember-me{
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.anchor-forgot-password{
+    font-size: 14px;
+    font-style: italic;
+}
+
+.container-links{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 900px){
+    .header-title{
+        margin: 37px;
+        font-size: 30px;
+        font-style: italic;
+        text-align: start;
+    }
+}

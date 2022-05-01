@@ -1,0 +1,121 @@
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+}
+
+header{
+    height: 20%;
+    background-color: #ACA3A0;
+    font-family: 'Raleway', sans-serif;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.4%;
+    height: 20%;
+    background-color: #373867;
+    border-top: 6px solid #AACE9B;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+h1{
+    font-size: 49px;
+    font-weight: bolder;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: #373867;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+    margin-bottom: 16px;
+}
+
+label{
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.header-title{
+    margin: 37px;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.form-text{
+    width:260px;
+    height: 37px;
+    font-size: 14px;
+}
+
+.error-message {
+    display: none;
+    width:260px;
+    font-size: 10px;
+    color: red;
+}
+
+.form-button{
+    width:268px;
+    height:47px;
+    background-color: #AACE9B;
+    font-size: 24px;
+}
+
+.container-links{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.social-media{
+    margin: 8px;
+}
+
+@media screen and (min-width: 900px){
+    form{
+        width: 70%;
+    }
+
+    .header-title{
+        margin: 37px;
+        font-size: 30px;
+        font-style: italic;
+        text-align: start;
+    }
+    
+    .form-button{
+        margin-left: 32%;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    form{
+        width: 55%;
+    }
+}
