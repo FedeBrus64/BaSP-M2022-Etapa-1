@@ -43,6 +43,25 @@ window.onload = function () {
     var formOK = false;
     var emailCheck = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
 
+    if(localStorage.getItem('Name') != null && localStorage.getItem('Surname') != null && 
+    localStorage.getItem('ID') != null && localStorage.getItem('DateOfBirth') !=null && 
+    localStorage.getItem('Telephone') != null && localStorage.getItem('Address') != null &&
+    localStorage.getItem('Location') != null && localStorage.getItem('PostalCode') != null &&
+    localStorage.getItem('Email') != null && localStorage.getItem('Password') != null){
+        name.value = localStorage.getItem('Name');
+        surname.value = localStorage.getItem('Surname');
+        ID.value = localStorage.getItem('ID');  
+        telephone.value = localStorage.getItem('Telephone');
+        dateOfBirth.value = localStorage.getItem('DateOfBirth');
+        address.value = localStorage.getItem('Address');
+        location.value = localStorage.getItem('Location');
+        postalCode.value = localStorage.getItem('PostalCode');    
+        email.value = localStorage.getItem('Email');
+        repeatEmail.value = localStorage.getItem('Email'); 
+        password.value = localStorage.getItem('Password');
+        repeatPassword.value = localStorage.getItem('Password'); 
+    }
+
     name.addEventListener("blur", function() {
         nameOk = true;
         if(name.value.length <= 3){
@@ -405,9 +424,38 @@ window.onload = function () {
         }
 
         if (formOK == true){
-            fetch('https://basp-m2022-api-rest-server.herokuapp.com/signup')
-            .then()
-            window.alert('Employee successfully created');
+            var dateSubmitted = new Date(dateOfBirth.value);
+            var dob = dateSubmitted.getMonth()+1 + '/' + 
+            dateSubmitted.getDate() + '/' + dateSubmitted.getFullYear();
+            console.log(dob);
+            fetch(`https://basp-m2022-api-rest-server.herokuapp.com/signup?name=${name.value}&lastName=${surname.value}&dni=${ID.value}&phone=${telephone.value}&address=${address.value}&dob=${dob}&city=${location.value}&zip=${postalCode.value}&email=${email.value}&password=${password.value}`)
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (jsonResponse) {
+                console.log("json", jsonResponse)
+                if (jsonResponse.success) {
+                    window.alert('Employee successfully created');
+                    console.log("Good");
+                    localStorage.setItem('Name', name.value);
+                    localStorage.setItem('Surname', surname.value);
+                    localStorage.setItem('ID', ID.value);
+                    localStorage.setItem('DateOfBirth', dateOfBirth.value);
+                    localStorage.setItem('Telephone', telephone.value);
+                    localStorage.setItem('Address', address.value);
+                    localStorage.setItem('Location', location.value);
+                    localStorage.setItem('PostalCode', postalCode.value)
+                    localStorage.setItem('Email', email.value);
+                    localStorage.setItem('Password', password.value);
+                    return jsonResponse
+                } else {
+                    throw jsonResponse
+                }
+            })
+            .catch(function (error) {
+                window.alert('There was an error creating the employee');
+                console.warn('Error', error);
+            })
         }
     }
 }

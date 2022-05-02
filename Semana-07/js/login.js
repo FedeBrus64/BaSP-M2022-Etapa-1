@@ -7,6 +7,11 @@ window.onload = function () {
     var emailCheck = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
     var formOK = true;
 
+    if(localStorage.getItem('Email') != null && localStorage.getItem('Password') != null){
+        email.value = localStorage.getItem('Email');
+        password.value = localStorage.getItem('Password');
+    }
+    
     password.addEventListener("blur", function() {
         if (password.value.length < 8) {
             errorMessagePassword.style.display = 'flex';
@@ -60,23 +65,24 @@ window.onload = function () {
         }
 
         if(formOK){
-            fetch('https://basp-m2022-api-rest-server.herokuapp.com/login?email=${email.value}&password=${password.value}')
+            fetch(`https://basp-m2022-api-rest-server.herokuapp.com/login?email=${email.value}&password=${password.value}`)
             .then(function (response) {
                 return response.json();
             })
             .then(function (jsonResponse) {
                 console.log("json", jsonResponse)
                 if (jsonResponse.success) {
-                    console.log("Good");
-                    localStorage.setItem('Email', JSON.stringify(email));
-                    localStorage.setItem('Password', JSON.stringify(password));
                     window.alert('You have successfully logged in');
+                    console.log("Good");
+                    localStorage.setItem('Email', email.value);
+                    localStorage.setItem('Password', password.value);
                     return jsonResponse
                 } else {
                     throw jsonResponse
                 }
             })
             .catch(function (error) {
+                window.alert('The log in process was unsuccessful');
                 console.warn('Error', error);
             })
         }
