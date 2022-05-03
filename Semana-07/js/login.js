@@ -4,7 +4,12 @@ window.onload = function () {
     var password = document.getElementsByName("password")[0];
     var email = document.getElementsByName("email")[0];
     var button = document.getElementsByName("button-log-in")[0];
+    var modal = document.getElementsByClassName("modal")[0];
+    var alertParagraph = document.getElementById("alert-paragraph");
     var emailCheck = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
+    var closeButton = document.getElementById("close-button");
+    var okButton = document.getElementById("ok-button");
+    var alertTitle = document.getElementById("alert-title");
     var formOK = true;
 
     if(localStorage.getItem('Email') != null && localStorage.getItem('Password') != null){
@@ -72,7 +77,11 @@ window.onload = function () {
             .then(function (jsonResponse) {
                 console.log("json", jsonResponse)
                 if (jsonResponse.success) {
+                    modal.style.display = 'flex';
+                    alertTitle.innerHTML = 'Log in process successful';
+                    alertParagraph.innerHTML = jsonResponse.msg;
                     window.alert('You have successfully logged in');
+                    window.alert(jsonResponse.msg);
                     console.log("Good");
                     localStorage.setItem('Email', email.value);
                     localStorage.setItem('Password', password.value);
@@ -82,9 +91,21 @@ window.onload = function () {
                 }
             })
             .catch(function (error) {
+                modal.style.display = 'flex';
+                alertTitle.innerHTML = 'Log in process unsuccessful';
+                alertParagraph.innerHTML = error.msg;
                 window.alert('The log in process was unsuccessful');
+                window.alert(error.msg);
                 console.warn('Error', error);
             })
         }
+    }
+
+    closeButton.onclick = function(){
+        modal.style.display = 'none'
+    }
+
+    okButton.onclick = function(){
+        modal.style.display = 'none'
     }
 }

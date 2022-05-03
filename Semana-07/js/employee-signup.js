@@ -42,6 +42,11 @@ window.onload = function () {
     var passwordCoincideOk = false;
     var formOK = false;
     var emailCheck = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
+    var closeButton = document.getElementById("close-button");
+    var okButton = document.getElementById("ok-button");
+    var alertTitle = document.getElementById("alert-title");
+    var alertParagraph = document.getElementById("alert-paragraph");
+    var modal = document.getElementsByClassName("modal")[0];
 
     if(localStorage.getItem('Name') != null && localStorage.getItem('Surname') != null && 
     localStorage.getItem('ID') != null && localStorage.getItem('DateOfBirth') !=null && 
@@ -427,7 +432,6 @@ window.onload = function () {
             var dateSubmitted = new Date(dateOfBirth.value);
             var dob = dateSubmitted.getMonth()+1 + '/' + 
             dateSubmitted.getDate() + '/' + dateSubmitted.getFullYear();
-            console.log(dob);
             fetch(`https://basp-m2022-api-rest-server.herokuapp.com/signup?name=${name.value}&lastName=${surname.value}&dni=${ID.value}&phone=${telephone.value}&address=${address.value}&dob=${dob}&city=${location.value}&zip=${postalCode.value}&email=${email.value}&password=${password.value}`)
             .then(function (response) {
                 return response.json();
@@ -435,7 +439,11 @@ window.onload = function () {
             .then(function (jsonResponse) {
                 console.log("json", jsonResponse)
                 if (jsonResponse.success) {
+                    modal.style.display = 'flex';
+                    alertTitle.innerHTML = 'Sign in process successful';
+                    alertParagraph.innerHTML = jsonResponse.msg;
                     window.alert('Employee successfully created');
+                    window.alert(jsonResponse.msg);
                     console.log("Good");
                     localStorage.setItem('Name', name.value);
                     localStorage.setItem('Surname', surname.value);
@@ -453,9 +461,21 @@ window.onload = function () {
                 }
             })
             .catch(function (error) {
+                modal.style.display = 'flex';
+                alertTitle.innerHTML = 'Sign in process unsuccessful';
+                alertParagraph.innerHTML = error.msg;
                 window.alert('There was an error creating the employee');
+                window.alert(error.msg);
                 console.warn('Error', error);
             })
         }
+    }
+
+    closeButton.onclick = function(){
+        modal.style.display = 'none'
+    }
+
+    okButton.onclick = function(){
+        modal.style.display = 'none'
     }
 }
