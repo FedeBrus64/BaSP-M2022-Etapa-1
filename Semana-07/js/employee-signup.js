@@ -115,7 +115,7 @@ window.onload = function () {
 
     function validateID(){
         idOK = true;
-        if (ID.value.length <= 7){
+        if (ID.value.length < 7 || ID.value.length > 8){
             idOK = false;
             errorMessageID.style.display = 'flex';
         }
