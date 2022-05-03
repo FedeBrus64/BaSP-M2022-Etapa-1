@@ -15,6 +15,8 @@ window.onload = function () {
     var formOK = true;
 
     if (localStorage.getItem('Email') != null && localStorage.getItem('Password') != null){
+        emailOK = true;
+        passwordOK = true;
         email.value = localStorage.getItem('Email');
         password.value = localStorage.getItem('Password');
     }
@@ -82,7 +84,14 @@ window.onload = function () {
             .catch(function (error) {
                 modal.style.display = 'flex';
                 alertTitle.innerHTML = 'Log in process unsuccessful';
-                alertParagraph.innerHTML = error.msg;
+                if (Array.isArray(error.errors)){
+                    for (i = 0; i < error.errors.length; i++) {
+                        alertParagraph.innerHTML = error.errors[i].msg;
+                    }
+                }
+                else{
+                    alertParagraph.innerHTML = error.msg;
+                }
                 // window.alert('The log in process was unsuccessful');
                 // window.alert(error.msg);
                 console.warn('Error', error);

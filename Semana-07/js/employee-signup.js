@@ -53,6 +53,18 @@ window.onload = function () {
     localStorage.getItem('Telephone') != null && localStorage.getItem('Address') != null &&
     localStorage.getItem('Location') != null && localStorage.getItem('PostalCode') != null &&
     localStorage.getItem('Email') != null && localStorage.getItem('Password') != null){
+        nameOk = true; 
+        surnameOk = true;
+        idOK = true;
+        telephoneOK = true;
+        addressOK = true;
+        locationOK = true;
+        dateOfBirthOK = true;
+        postalCodeOK = true;
+        emailOK = true;
+        emailCoincideOK = true;
+        passwordOK = true; 
+        passwordCoincideOk = true;
         name.value = localStorage.getItem('Name');
         surname.value = localStorage.getItem('Surname');
         ID.value = localStorage.getItem('ID');  
@@ -442,7 +454,14 @@ window.onload = function () {
             .catch(function (error) {
                 modal.style.display = 'flex';
                 alertTitle.innerHTML = 'Sign in process unsuccessful';
-                alertParagraph.innerHTML = error.msg;
+                if (Array.isArray(error.errors)){
+                    for (i = 0; i < error.errors.length; i++) {
+                        alertParagraph.innerHTML = error.errors[i].msg;
+                    }
+                }
+                else{
+                    alertParagraph.innerHTML = error.msg;
+                }
                 // window.alert('There was an error creating the employee');
                 // window.alert(error.msg);
                 console.warn('Error', error);
