@@ -67,7 +67,7 @@ window.onload = function () {
         repeatPassword.value = localStorage.getItem('Password'); 
     }
 
-    name.addEventListener("blur", function() {
+    function validateName(){
         nameOk = true;
         if (name.value.length <= 3){
             nameOk = false;
@@ -82,13 +82,9 @@ window.onload = function () {
                 break;
             }  
         }
-    }, true);
+    }
 
-    name.addEventListener("focus", function() {
-        errorMessageName.style.display = 'none';
-    }, true);
-
-    surname.addEventListener("blur", function() {
+    function validateSurname(){
         surnameOk = true;
         if (surname.value.length <= 3){
             surnameOk = false;
@@ -103,13 +99,9 @@ window.onload = function () {
                 break;
             }  
         }
-    }, true);
+    }
 
-    surname.addEventListener("focus", function() {
-        errorMessageSurname.style.display = 'none';
-    }, true);
-
-    ID.addEventListener("blur", function() {
+    function validateID(){
         idOK = true;
         if (ID.value.length <= 7){
             idOK = false;
@@ -119,13 +111,9 @@ window.onload = function () {
             idOK = false;
             errorMessageID.style.display = 'flex';
         }
-    }, true);
+    }
 
-    ID.addEventListener("focus", function() {
-        errorMessageID.style.display = 'none';
-    }, true);
-
-    telephone.addEventListener("blur", function() {
+    function validateTelephone(){
         telephoneOK = true;
         if (telephone.value.length != 10){
             telephoneOK = false;
@@ -135,13 +123,9 @@ window.onload = function () {
             telephoneOK = false;
             errorMessageTelephone.style.display = 'flex';
         }
-    }, true);
+    }
 
-    telephone.addEventListener("focus", function() {
-        errorMessageTelephone.style.display = 'none';
-    }, true);
-
-    dateOfBirth.addEventListener("blur", function(){
+    function validateDateOfBirth(){
         var today = new Date();
         var dateSubmitted = new Date(dateOfBirth.value);
         dateOfBirthOK = true;
@@ -173,13 +157,9 @@ window.onload = function () {
                 }
             }
         }
-    }, true);
+    }
 
-    dateOfBirth.addEventListener("focus", function() {
-        errorMessageDateOfBirth.style.display = 'none';
-    }, true);
-
-    address.addEventListener("blur", function() {
+    function validateAddress(){
         addressOK = true;
         var letterCounter = 0;
         var numberCounter = 0;
@@ -237,14 +217,9 @@ window.onload = function () {
             addressOK = false;
             errorMessageAddress.style.display = 'flex';
         }
+    }
 
-    }, true);
-
-    address.addEventListener("focus", function() {
-        errorMessageAddress.style.display = 'none';
-    }, true);
-
-    location.addEventListener("blur", function() {
+    function validateLocation(){
         locationOK = true;
         var letterCounter = 0;
 
@@ -275,14 +250,9 @@ window.onload = function () {
             locationOK = false;
             errorMessageLocation.style.display = 'flex';
         }
+    }
 
-    }, true);
-
-    location.addEventListener("focus", function() {
-        errorMessageLocation.style.display = 'none';
-    }, true);
-
-    postalCode.addEventListener("blur", function() {
+    function validatePostalCode(){
         postalCodeOK = true;
         if (postalCode.value.length < 4 || postalCode.value.length > 5){
             postalCodeOK = false;
@@ -292,13 +262,9 @@ window.onload = function () {
             postalCodeOK = false;
             errorMessagePostalCode.style.display = 'flex';
         }
-    }, true);
+    }
 
-    postalCode.addEventListener("focus", function() {
-        errorMessagePostalCode.style.display = 'none';
-    }, true);
-
-    email.addEventListener("blur", function() {
+    function validateEmail(){
         emailOK = true;
         emailCoincideOK = true;
         if (email.value.match(emailCheck) == null){
@@ -311,15 +277,9 @@ window.onload = function () {
             errorMessageEmailCoincide.style.display = 'flex';
             errorMessageRepeatEmailCoincide.style.display = 'flex';
         }
-    }, true);
+    }
 
-    email.addEventListener("focus", function(){
-        errorMessageEmail.style.display = 'none';
-        errorMessageEmailCoincide.style.display = 'none';
-        errorMessageRepeatEmailCoincide.style.display = 'none';
-    }, true);
-
-    repeatEmail.addEventListener("blur", function() {
+    function validateRepeatEmail(){
         emailOK = true;
         emailCoincideOK = true;
         if (email.value.match(emailCheck) == null){
@@ -332,15 +292,9 @@ window.onload = function () {
             errorMessageEmailCoincide.style.display = 'flex';
             errorMessageRepeatEmailCoincide.style.display = 'flex';
         }
-    }, true);
+    }
 
-    repeatEmail.addEventListener("focus", function(){
-        errorMessageRepeatEmail.style.display = 'none';
-        errorMessageEmailCoincide.style.display = 'none';
-        errorMessageRepeatEmailCoincide.style.display = 'none';
-    }, true);
-
-    password.addEventListener("blur", function() {
+    function validatePassword(){
         passwordOK = true;
         passwordCoincideOk = true;
         if (password.value.length < 8) {
@@ -363,15 +317,9 @@ window.onload = function () {
             errorMessagePasswordCoincide.style.display = 'flex';
             errorMessageRepeatPasswordCoincide.style.display = 'flex';
         }
-    }, true);
+    }
 
-    password.addEventListener("focus", function() {
-        errorMessagePassword.style.display = 'none';
-        errorMessagePasswordCoincide.style.display = 'none';
-        errorMessageRepeatPasswordCoincide.style.display = 'none';
-    }, true);
-
-    repeatPassword.addEventListener("blur", function() {
+    function validateRepeatPassword(){
         passwordOK = true;
         passwordCoincideOk = true;
         if (password.value.length < 8) {
@@ -395,15 +343,9 @@ window.onload = function () {
             errorMessagePasswordCoincide.style.display = 'flex';
             errorMessageRepeatPasswordCoincide.style.display = 'flex';
         }
-    }, true);
+    }
 
-    repeatPassword.addEventListener("focus", function() {
-        errorMessageRepeatPassword.style.display = 'none';
-        errorMessagePasswordCoincide.style.display = 'none';
-        errorMessageRepeatPasswordCoincide.style.display = 'none';
-    }, true);
-
-    button.onclick = function() {
+    function validateForm(){
         formOK = true;
         if (nameOk == false) {
             formOK = false;
@@ -507,6 +449,88 @@ window.onload = function () {
             })
         }
     }
+
+    name.addEventListener("blur", validateName, true);
+
+    name.addEventListener("focus", function() {
+        errorMessageName.style.display = 'none';
+    }, true);
+
+    surname.addEventListener("blur", validateSurname, true);
+
+    surname.addEventListener("focus", function() {
+        errorMessageSurname.style.display = 'none';
+    }, true);
+
+    ID.addEventListener("blur", validateID, true);
+
+    ID.addEventListener("focus", function() {
+        errorMessageID.style.display = 'none';
+    }, true);
+
+    telephone.addEventListener("blur", validateTelephone, true);
+
+    telephone.addEventListener("focus", function() {
+        errorMessageTelephone.style.display = 'none';
+    }, true);
+
+    dateOfBirth.addEventListener("blur", validateDateOfBirth, true);
+
+    dateOfBirth.addEventListener("focus", function() {
+        errorMessageDateOfBirth.style.display = 'none';
+    }, true);
+
+    address.addEventListener("blur", validateAddress, true);
+
+    address.addEventListener("focus", function() {
+        errorMessageAddress.style.display = 'none';
+    }, true);
+
+    location.addEventListener("blur", validateLocation, true);
+
+    location.addEventListener("focus", function() {
+        errorMessageLocation.style.display = 'none';
+    }, true);
+
+    postalCode.addEventListener("blur", validatePostalCode, true);
+
+    postalCode.addEventListener("focus", function() {
+        errorMessagePostalCode.style.display = 'none';
+    }, true);
+
+    email.addEventListener("blur", validateEmail, true);
+
+    email.addEventListener("focus", function(){
+        errorMessageEmail.style.display = 'none';
+        errorMessageEmailCoincide.style.display = 'none';
+        errorMessageRepeatEmailCoincide.style.display = 'none';
+    }, true);
+
+    repeatEmail.addEventListener("blur", validateRepeatEmail, true);
+
+    repeatEmail.addEventListener("focus", function(){
+        errorMessageRepeatEmail.style.display = 'none';
+        errorMessageEmailCoincide.style.display = 'none';
+        errorMessageRepeatEmailCoincide.style.display = 'none';
+    }, true);
+
+    password.addEventListener("blur", validatePassword, true);
+
+    password.addEventListener("focus", function() {
+        errorMessagePassword.style.display = 'none';
+        errorMessagePasswordCoincide.style.display = 'none';
+        errorMessageRepeatPasswordCoincide.style.display = 'none';
+    }, true);
+
+    repeatPassword.addEventListener("blur", validateRepeatPassword, true);
+
+    repeatPassword.addEventListener("focus", function() {
+        errorMessageRepeatPassword.style.display = 'none';
+        errorMessagePasswordCoincide.style.display = 'none';
+        errorMessageRepeatPasswordCoincide.style.display = 'none';
+    }, true);
+
+    button.onclick = validateForm;
 
     closeButton.onclick = function(){
         modal.style.display = 'none'
