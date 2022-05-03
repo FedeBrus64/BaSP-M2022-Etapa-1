@@ -48,7 +48,7 @@ window.onload = function () {
     var alertParagraph = document.getElementById("alert-paragraph");
     var modal = document.getElementsByClassName("modal")[0];
 
-    if(localStorage.getItem('Name') != null && localStorage.getItem('Surname') != null && 
+    if (localStorage.getItem('Name') != null && localStorage.getItem('Surname') != null && 
     localStorage.getItem('ID') != null && localStorage.getItem('DateOfBirth') !=null && 
     localStorage.getItem('Telephone') != null && localStorage.getItem('Address') != null &&
     localStorage.getItem('Location') != null && localStorage.getItem('PostalCode') != null &&
@@ -69,7 +69,7 @@ window.onload = function () {
 
     name.addEventListener("blur", function() {
         nameOk = true;
-        if(name.value.length <= 3){
+        if (name.value.length <= 3){
             nameOk = false;
             errorMessageName.style.display = 'flex';
         }
@@ -90,7 +90,7 @@ window.onload = function () {
 
     surname.addEventListener("blur", function() {
         surnameOk = true;
-        if(surname.value.length <= 3){
+        if (surname.value.length <= 3){
             surnameOk = false;
             errorMessageSurname.style.display = 'flex';
         }
@@ -111,11 +111,11 @@ window.onload = function () {
 
     ID.addEventListener("blur", function() {
         idOK = true;
-        if(ID.value.length <= 7){
+        if (ID.value.length <= 7){
             idOK = false;
             errorMessageID.style.display = 'flex';
         }
-        if(Number.isInteger(parseInt(ID.value))== false) {
+        if (Number.isInteger(parseInt(ID.value))== false) {
             idOK = false;
             errorMessageID.style.display = 'flex';
         }
@@ -127,11 +127,11 @@ window.onload = function () {
 
     telephone.addEventListener("blur", function() {
         telephoneOK = true;
-        if(telephone.value.length != 10){
+        if (telephone.value.length != 10){
             telephoneOK = false;
             errorMessageTelephone.style.display = 'flex';
         }
-        if(Number.isInteger(parseInt(telephone.value))== false) {
+        if (Number.isInteger(parseInt(telephone.value))== false) {
             telephoneOK = false;
             errorMessageTelephone.style.display = 'flex';
         }
@@ -181,12 +181,20 @@ window.onload = function () {
 
     address.addEventListener("blur", function() {
         addressOK = true;
+        var letterCounter = 0;
+        var numberCounter = 0;
+
         if (address.value.length < 5) {
             addressOK = false;
             errorMessageAddress.style.display = 'flex';
         }
 
         if (address.value.indexOf(' ') == -1){
+            addressOK = false;
+            errorMessageAddress.style.display = 'flex';  
+        }
+
+        if (address.value.indexOf(' ') == address.value.length-1){
             addressOK = false;
             errorMessageAddress.style.display = 'flex';  
         }
@@ -201,6 +209,35 @@ window.onload = function () {
                 }
             }
         }
+
+        for (i = 0; i < address.value.length; i++){
+            if (address.value.substring(i, i+1).toLowerCase() != 
+            address.value.substring(i, i+1).toUpperCase()) {
+                letterCounter = letterCounter + 1;
+            }
+        }
+
+        if (letterCounter == 0){
+            addressOK = false;
+            errorMessageAddress.style.display = 'flex';
+        }
+
+        for (i = 0; i < address.value.length; i++){
+            if (Number.isInteger(parseInt(address.value.substring(i, i+1))) == true) {
+                numberCounter = numberCounter + 1;
+            }
+        }
+
+        if (letterCounter == 0){
+            addressOK = false;
+            errorMessageAddress.style.display = 'flex';
+        }
+
+        if (numberCounter == 0){
+            addressOK = false;
+            errorMessageAddress.style.display = 'flex';
+        }
+
     }, true);
 
     address.addEventListener("focus", function() {
@@ -247,11 +284,11 @@ window.onload = function () {
 
     postalCode.addEventListener("blur", function() {
         postalCodeOK = true;
-        if(postalCode.value.length < 4 || postalCode.value.length > 5){
+        if (postalCode.value.length < 4 || postalCode.value.length > 5){
             postalCodeOK = false;
             errorMessagePostalCode.style.display = 'flex';
         }
-        if(Number.isInteger(parseInt(postalCode.value))== false) {
+        if (Number.isInteger(parseInt(postalCode.value))== false) {
             postalCodeOK = false;
             errorMessagePostalCode.style.display = 'flex';
         }
@@ -264,12 +301,12 @@ window.onload = function () {
     email.addEventListener("blur", function() {
         emailOK = true;
         emailCoincideOK = true;
-        if(email.value.match(emailCheck) == null){
+        if (email.value.match(emailCheck) == null){
             emailOK = false;
             errorMessageEmail.style.display = 'flex';
         }
 
-        if(email.value != repeatEmail.value){
+        if (email.value != repeatEmail.value){
             emailCoincideOK = false;
             errorMessageEmailCoincide.style.display = 'flex';
             errorMessageRepeatEmailCoincide.style.display = 'flex';
@@ -285,12 +322,12 @@ window.onload = function () {
     repeatEmail.addEventListener("blur", function() {
         emailOK = true;
         emailCoincideOK = true;
-        if(email.value.match(emailCheck) == null){
+        if (email.value.match(emailCheck) == null){
             emailOK = false;
             errorMessageRepeatEmail.style.display = 'flex';
         }
 
-        if(email.value != repeatEmail.value){
+        if (email.value != repeatEmail.value){
             emailCoincideOK = false;
             errorMessageEmailCoincide.style.display = 'flex';
             errorMessageRepeatEmailCoincide.style.display = 'flex';
@@ -442,8 +479,8 @@ window.onload = function () {
                     modal.style.display = 'flex';
                     alertTitle.innerHTML = 'Sign in process successful';
                     alertParagraph.innerHTML = jsonResponse.msg;
-                    window.alert('Employee successfully created');
-                    window.alert(jsonResponse.msg);
+                    // window.alert('Employee successfully created');
+                    // window.alert(jsonResponse.msg);
                     console.log("Good");
                     localStorage.setItem('Name', name.value);
                     localStorage.setItem('Surname', surname.value);
@@ -464,8 +501,8 @@ window.onload = function () {
                 modal.style.display = 'flex';
                 alertTitle.innerHTML = 'Sign in process unsuccessful';
                 alertParagraph.innerHTML = error.msg;
-                window.alert('There was an error creating the employee');
-                window.alert(error.msg);
+                // window.alert('There was an error creating the employee');
+                // window.alert(error.msg);
                 console.warn('Error', error);
             })
         }

@@ -52,4 +52,4 @@ The sixth week consisted in creating the log in and employee register pages, inc
 
 ## Week 7
 
-The seventh week consisted in using an API to send the information from every form using fetch and query-params. The API also verified if the email and the password were equal to some values already submitted in it.
+The seventh week consisted in using an API to send the information from every form using fetch and query-params. The API also verified if the email and the password were equal to some values already submitted in it. This week consisted in creating modals to replace the window alerts as well.
