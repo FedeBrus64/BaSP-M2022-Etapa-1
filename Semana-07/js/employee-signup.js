@@ -194,7 +194,7 @@ window.onload = function () {
             errorMessageAddress.style.display = 'flex';  
         }
 
-        if (address.value.indexOf(' ') == address.value.length-1){
+        if (address.value.substring(address.value.length-1, address.value.length) == ' '){
             addressOK = false;
             errorMessageAddress.style.display = 'flex';  
         }
