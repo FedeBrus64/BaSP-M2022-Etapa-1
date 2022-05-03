@@ -10,6 +10,8 @@ window.onload = function () {
     var closeButton = document.getElementById("close-button");
     var okButton = document.getElementById("ok-button");
     var alertTitle = document.getElementById("alert-title");
+    var emailOK = false;
+    var passwordOK = false;
     var formOK = true;
 
     if (localStorage.getItem('Email') != null && localStorage.getItem('Password') != null){
@@ -17,56 +19,43 @@ window.onload = function () {
         password.value = localStorage.getItem('Password');
     }
     
-    password.addEventListener("blur", function() {
+    function validatePassword() {
+        passwordOK = true;
         if (password.value.length < 8) {
+            passwordOK = false;
             errorMessagePassword.style.display = 'flex';
         }
         for(i = 0; i < password.value.length; i++) {
             if (Number.isInteger(parseInt(password.value.substring(i, i+1))) == false){
                 if (password.value.substring(i, i+1).toLowerCase() == 
                 password.value.substring(i, i+1).toUpperCase()) {
+                    passwordOK = false;
                     errorMessagePassword.style.display = 'flex';
                     break;
                 }
             }
         }
-    }, true);
+    }
 
-    password.addEventListener("focus", function() {
-        errorMessagePassword.style.display = 'none';
-    }, true);
-
-    email.addEventListener("blur", function() {
+    function validateEmail() {
+        emailOK = true;
         if (email.value.match(emailCheck) == null){
+            emailOK = false;
             errorMessageEmail.style.display = 'flex';
         }
-    }, true);
+    }
 
-    email.addEventListener("focus", function(){
-        errorMessageEmail.style.display = 'none';
-    }, true);
-
-    button.onclick= function(){
+    function validateForm() {
         formOK= true;
-        if (password.value.length < 8) {
-            formOK= false;
-            window.alert('Password must contain at least 8 alphanumeric characters');
-        }
 
-        for(i = 0; i < password.value.length; i++) {
-            if (Number.isInteger(parseInt(password.value.substring(i, i+1))) == false){
-                if (password.value.substring(i, i+1).toLowerCase() == 
-                password.value.substring(i, i+1).toUpperCase()) {
-                    formOK= false;
-                    window.alert('Password must contain at least 8 alphanumeric characters');
-                    break;
-                }
-            }
-        }
-
-        if (email.value.match(emailCheck) == null){
+        if (emailOK == false){
             formOK= false;
             window.alert('The email is not valid');
+        }
+
+        if (passwordOK == false){
+            formOK= false;
+            window.alert('Password must contain at least 8 alphanumeric characters');
         }
 
         if (formOK){
@@ -80,8 +69,8 @@ window.onload = function () {
                     modal.style.display = 'flex';
                     alertTitle.innerHTML = 'Log in process successful';
                     alertParagraph.innerHTML = jsonResponse.msg;
-                    window.alert('You have successfully logged in');
-                    window.alert(jsonResponse.msg);
+                    // window.alert('You have successfully logged in');
+                    // window.alert(jsonResponse.msg);
                     console.log("Good");
                     localStorage.setItem('Email', email.value);
                     localStorage.setItem('Password', password.value);
@@ -94,12 +83,26 @@ window.onload = function () {
                 modal.style.display = 'flex';
                 alertTitle.innerHTML = 'Log in process unsuccessful';
                 alertParagraph.innerHTML = error.msg;
-                window.alert('The log in process was unsuccessful');
-                window.alert(error.msg);
+                // window.alert('The log in process was unsuccessful');
+                // window.alert(error.msg);
                 console.warn('Error', error);
             })
         }
     }
+
+    password.addEventListener("blur", validatePassword, true);
+
+    password.addEventListener("focus", function() {
+        errorMessagePassword.style.display = 'none';
+    }, true);
+
+    email.addEventListener("blur", validateEmail, true);
+
+    email.addEventListener("focus", function(){
+        errorMessageEmail.style.display = 'none';
+    }, true);
+
+    button.onclick= validateForm;
 
     closeButton.onclick = function(){
         modal.style.display = 'none'
